@@ -5,4 +5,8 @@
 /*   MAIN   */
 .loMasVendidoMain {
     padding: 2rem 4rem;
+
+    @include mobile {
+        padding: 2rem 1rem
+    }
 }

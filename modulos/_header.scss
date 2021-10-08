@@ -37,6 +37,8 @@
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    position: relative;
+    z-index: 1100;
 
     @include tablet {
         justify-content: space-evenly;
@@ -106,6 +108,7 @@
         outline: none;
         margin-left: .5rem;
         background: none;
+        color: $negro
     }
 }
 
@@ -303,6 +306,7 @@
 
     .nav-item:focus {
         box-shadow: none;
+        outline: none;
     }
 
     .nav-item:nth-child(3):hover {
@@ -330,6 +334,8 @@
 
 .header__liCategoria {
     padding: 0;
+    box-shadow: none;
+    outline: none;
 
     &:hover>.header__submenu {
         transform: translate(0, 0);

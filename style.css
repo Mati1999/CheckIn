@@ -49,6 +49,8 @@ html {
   justify-content: space-around;
   align-items: center;
   height: 100%;
+  position: relative;
+  z-index: 1100;
 }
 @media only screen and (max-width: 991px) {
   .header__menu {
@@ -110,6 +112,7 @@ html {
   outline: none;
   margin-left: 0.5rem;
   background: none;
+  color: black;
 }
 
 .modal-backdrop {
@@ -297,6 +300,7 @@ html {
 }
 .header__ul .nav-item:focus {
   box-shadow: none;
+  outline: none;
 }
 .header__ul .nav-item:nth-child(3):hover {
   border-bottom: 1px solid white;
@@ -315,6 +319,8 @@ html {
 
 .header__liCategoria {
   padding: 0;
+  box-shadow: none;
+  outline: none;
 }
 .header__liCategoria:hover > .header__submenu {
   transform: translate(0, 0);
@@ -709,6 +715,11 @@ html {
 .loMasVendidoMain {
   padding: 2rem 4rem;
 }
+@media only screen and (max-width: 767px) {
+  .loMasVendidoMain {
+    padding: 2rem 1rem;
+  }
+}
 
 html {
   font-size: 14px;
@@ -839,6 +850,11 @@ html {
 /*   MAIN   */
 .ofertasMain {
   padding: 2rem 4rem;
+}
+@media only screen and (max-width: 767px) {
+  .ofertasMain {
+    padding: 2rem 1rem;
+  }
 }
 
 html {

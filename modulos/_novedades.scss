@@ -33,6 +33,11 @@
         height: 15rem;
     }
 
+
+    &:hover {
+        @include shadowTranslate(5px, 5px, 5px, $colorPrimario, 0, -3px);
+    }
+
     & a {
         @include medidas(80%, 2rem);
         margin-top: 5rem;
@@ -42,7 +47,7 @@
         text-decoration: none;
         border: $borderPrimario;
         border-radius: 1rem;
-        background: $blancoTransparent;
+        background: $colorTerciario;
         color: $colorPrimario;
         font-weight: 700;
         transition: $transicion;
@@ -61,6 +66,7 @@
     & h3 {
         margin: 1rem 0;
         font-size: 1.3rem;
+        color: $colorTerciario;
 
         @include miniMobile {
             font-size: 1rem;
@@ -93,8 +99,4 @@ novedad3 {
 
 .novedad--novedad2 {
     background-size: cover;
-}
-
-.novedad:hover {
-    transform: scale(1.03, 1.03);
 }

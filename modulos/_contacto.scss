@@ -26,7 +26,7 @@
 
 .contactoMain__titulo {
     font-size: 2rem;
-    color: $blanco;
+    color: $colorPrimario;
 }
 
 .form {
@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: $blancoTransparent;
+    background: $colorPrimarioTransparent;
     border-radius: .3rem;
     height: 80%;
     width: 40%;
@@ -45,9 +45,14 @@
     background: none;
     border: none;
     width: 50%;
-    border-bottom: $borderBlanco;
+    border-bottom: $borderPrimario;
     font-size: 1.5rem;
     outline: none;
+    color: $colorTerciario;
+
+    &::placeholder {
+        color: $colorTerciario;
+    }
 }
 
 .form__Email {
@@ -55,32 +60,38 @@
     flex-direction: column;
     width: 100%;
     border: none;
-    border-bottom: $borderBlanco;
+    border-bottom: $borderPrimario;
     background: none;
     font-size: 1.5rem;
     outline: none;
     margin-bottom: 1rem;
+    color: $colorTerciario;
+
+    &::placeholder {
+        color: $colorTerciario;
+    }
 }
 
 .form__mensaje {
     width: 100%;
     resize: none;
-    background: $grisOscuroTransparent;
+    background: $colorPrimario;
     outline: none;
     padding: .5rem;
-    color: $blanco;
+    margin-bottom: 1rem;
+    color: $colorTerciario;
     font-size: 1.2rem;
-    border: 1px solid $grisOscuro;
+    border: $borderPrimario;
     transition: all .3s ease;
 
     &:focus,
     &:hover {
-        border: 1px solid $blancoTransparent;
+        border: $borderTerciario;
     }
 
     &::placeholder {
         font-size: 1.5rem;
-        color: $blanco;
+        color: $colorTerciario;
     }
 }
 
@@ -91,25 +102,20 @@
 
 .form__submit,
 .form__reset {
-    border: $borderBlanco;
-    background: none;
+    border: $borderPrimario;
+    background: $colorPrimario;
     width: 10rem;
     height: 2rem;
-    border-radius: .2rem;
-    font-size: 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: all .3s ease;
-    color: $blanco;
+    color: $colorTerciario;
 
     &:hover,
     &:hover {
-        border: $borderBlanco;
-        background: $blanco;
-        width: 10rem;
-        height: 2rem;
-        border-radius: .2rem;
-        font-size: 1rem;
-        cursor: pointer;
-        color: $negro;
+        border: $borderPrimario;
+        background: $colorTerciario;
+        color: $colorPrimario;
     }
 }

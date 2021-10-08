@@ -250,6 +250,10 @@
         top: 0;
         margin-top: 1rem
     }
+
+    & .container-fluid {
+        position: relative;
+    }
 }
 
 .header__toggler {
@@ -282,6 +286,8 @@
     @include tablet {
         justify-content: flex-start;
         background: $colorPrimario;
+        position: absolute;
+        top: 85%;
         width: 100vw;
     }
 }

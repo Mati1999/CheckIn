@@ -1,0 +1,33 @@
+$fontSize-general: 14px;
+$fontFamily-general: 'Montserrat',
+sans-serif;
+
+// COLORES Y VARIABLES
+$blanco: rgb(255, 255, 255);
+$blancoTransparent: rgba(255, 255, 255, 0.350);
+$negro: rgb(0, 0, 0);
+$grisClaro: rgb(167, 167, 167);
+$grisOscuro: rgba(94, 94, 94, 0);
+$grisOscuroTransparent: rgba(94, 94, 94, 0.49);
+$borderBlanco: 1px solid $blanco;
+$borderNegro: 1px solid $negro;
+
+$transicion: all .3s ease;
+
+// ESTILOS GENERALES
+html {
+    font-size: $fontSize-general;
+    font-family: $fontFamily-general;
+}
+
+// MIXINS
+@mixin medidas ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin backgrounds ($position, $size, $repeat) {
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;
+}

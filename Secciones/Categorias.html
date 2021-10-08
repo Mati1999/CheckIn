@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Categorias</title>
+</head>
+
+<body>
+
+    <div class="indexContainer container-fluid p-0">
+        <header>
+            <!-- Imagen del logo -->
+            <div class="menu">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+
+                <input class="buscador" type="text">
+
+                <div class="inicioSesion d-none d-lg-block">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="button" value="Inicia Sesión">
+                </div>
+                <div class="carrito" id="carrito">
+                    <a data-bs-toggle="offcanvas" href="#carritoDesplegable" role="button"
+                        aria-controls="carritoDesplegable">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoDesplegable"
+                    aria-labelledby="carritoDesplegableLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="carritoDesplegableLabel">MI CARRITO</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Creación de ejemplos de productos agregados en proceso...
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Acá empieza el menú de navegación -->
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler p-0 ms-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+                    <div class="collapse navbar-collapse submenu" id="navbarNavDropdown">
+                        <ul class="navbar-nav navbar__ul">
+                            <div class="inicioSesion d-lg-none">
+                                <ion-icon name="person-outline"></ion-icon>
+                                <input type="button" value="Inicia Sesión">
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item liCategoria">
+                                <a class="nav-link p-0 active" href="#">Categorias</a>
+                                <ul class="p-0 m-0">
+                                    <li><a href="#">Indumentaria</a></li>
+                                    <li><a href="#">Equipaje</a></li>
+                                    <li><a href="#">Comodidad</a></li>
+                                    <li><a href="#">Tecnología</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="Novedades.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="LoMasVendido.html">Lo mas vendido</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="Ofertas.html">Ofertas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="Contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <main class="novedades-main">
+            <h1>PÁGINA DE CATEGORÍA EN PROCESO DE CREACIÓN</h1>
+
+        </main>
+        <footer class="footer">
+
+            <div class="menus">
+                <a href="../index.html">
+                    <h5>Inicio</h5>
+                </a></h5>
+                <a href="Categorias.html">
+                    <h5>Categorias</h5>
+                </a>
+                <a href="Novedades.html">
+                    <h5>Novedades</h5>
+                </a>
+                <a href="LoMasVendido.html">
+                    <h5>Lo más vendido</h5>
+                </a>
+                <a href="Ofertas.html">
+                    <h5>Ofertas</h5>
+                </a>
+                <a href="Contacto.html">
+                    <h5>Contacto</h5>
+                </a>
+            </div>
+            <div class="datos">
+                <p>Tel:1-800-000-000</p>
+                <p>Email:checkin@gmail.com</p>
+            </div>
+            <div class="envios-preguntas">
+                <h5><a href="">Envíos y Devoluciones</a></h5>
+                <h5><a href="">Preguntas Frecuentes</a></h5>
+            </div>
+            <div class="newsLetter">
+                <form action="">
+                    <h5>Subscríbete al Newsletter</h5>
+                    <input class="footerInput" type="email" name="correo" id="correo" placeholder="Correo electrónico">
+                    <input class="subscribirme" type="submit" value="Subscribirme">
+                </form>
+            </div>
+            <div class="redes">
+                <div>
+                    <a href="">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>

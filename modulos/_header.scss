@@ -1,0 +1,383 @@
+@import '../utilidades/variables';
+@import 'mediaQueries';
+
+
+.header {
+    padding: 1rem 0;
+    position: sticky;
+    top: 0rem;
+    z-index: 1000;
+    background-color: $blanco;
+    box-shadow: 0 5px .5rem $grisOscuroTransparent;
+    height: 100%;
+
+    @include miniMobile {
+        padding: 1rem 0 0 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $negro;
+    }
+
+    & .row {
+        width: 100%;
+
+        @include tablet {
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+    @include tablet {
+        justify-content: space-evenly;
+        // width: 100%;
+    }
+
+    img {
+        width: 10rem;
+    }
+}
+
+
+.header__buscador {
+    @include medidas(40%, 2rem);
+    padding: .5rem;
+    border: 1px solid $grisClaro;
+    border-radius: 1rem;
+    outline: none;
+    transition: $transicion;
+
+    &:hover,
+    &:focus {
+        border: $borderNegro;
+    }
+}
+
+.header__buscadorMobile {
+    @extend .header__buscador;
+    @include medidas(80%, 2rem);
+
+}
+
+.header__botonModal {
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+}
+
+.header__botonSesion {
+    @include medidas(8.5rem, 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    transition: $transicion;
+    background: $blanco;
+
+    &:hover {
+        background: $negro;
+    }
+
+    &:hover>input,
+    &:hover>ion-icon {
+        color: $blanco;
+    }
+
+    & ion-icon {
+        @include medidas(1.5rem, 1.5rem);
+        color: $negro;
+    }
+
+    & input {
+        border: none;
+        outline: none;
+        margin-left: .5rem;
+        background: none;
+    }
+}
+
+.modal-backdrop {
+    @include medidas(100vw, 100vh);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color: $negro;
+}
+
+.modal-dialog {
+    @include medidas(40%, 50%);
+    position: relative;
+    max-width: 100%;
+    margin: 15rem auto;
+    pointer-events: none;
+
+    @include tablet {
+        @include medidas(50%, 30%);
+        max-width: 50%;
+    }
+
+    @include mobile {
+        @include medidas(80%, 30%);
+    }
+
+    @include miniMobile {
+        max-width: 80%;
+    }
+
+    .modal-content {
+        height: 100%;
+
+        & form {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        & form div {
+            width: 100%;
+        }
+
+        & form h2 {
+            font-size: 1.5rem;
+        }
+
+        & form div input {
+            border: $borderBlanco;
+            border-radius: 0;
+            padding: 0 0 0 .2rem;
+            height: 2.5rem;
+            width: 100%;
+            border-bottom: $borderNegro;
+            transition: $transicion;
+        }
+
+        & form div input:hover {
+            border: $borderNegro;
+            border-radius: .2rem;
+        }
+
+        & form div input:focus {
+            box-shadow: none;
+            border-radius: .2rem;
+            border: $borderNegro;
+        }
+
+        & form button {
+            width: 50%;
+            border: $borderNegro;
+            border-radius: 1rem;
+            transition: $transicion;
+        }
+
+        & form button:hover {
+            border: $borderNegro;
+            background: $negro;
+            color: $blanco;
+        }
+    }
+}
+
+.header__carrito {
+    @include medidas(2rem, 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .2rem;
+    transition: $transicion;
+
+    & a {
+        color: $negro;
+        transition: $transicion;
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover {
+        background: $negro;
+        border-radius: .2rem;
+    }
+
+    &:hover a {
+        color: $blanco;
+    }
+
+    & ion-icon {
+        @include medidas(1.8rem, 1.8rem);
+    }
+}
+
+.header__navbar {
+    @include tablet {
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+}
+
+.header__toggler {
+    @include medidas(3rem, 3rem);
+
+    @include tablet {
+
+        background: transparent;
+
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    & ion-icon {
+        @include medidas(3rem, 3rem);
+    }
+}
+
+
+
+.header__collapse {
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+    padding-left: 0rem;
+
+    @include tablet {
+        justify-content: flex-start;
+        background: $blanco;
+        width: 100vw;
+    }
+}
+
+.header__ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+
+    @include tablet {
+        width: 100%;
+
+        & div {
+            padding-left: 1rem;
+        }
+    }
+
+    & .active {
+        font-weight: 600;
+    }
+
+    .nav-item {
+        height: 100%;
+        list-style-type: none;
+        position: relative;
+        border-bottom: $borderBlanco;
+        transition: $transicion;
+
+        @include tablet {
+            border-bottom: none;
+            margin: .5rem 0;
+            transition: $transicion;
+            padding-left: 1rem;
+        }
+
+    }
+
+    .nav-item:hover {
+        border-bottom: $borderNegro
+    }
+
+    .nav-item:nth-child(3):hover {
+        border-bottom: $borderBlanco;
+    }
+
+    .nav-item a {
+        font-size: 1.3rem;
+        padding: 0;
+        color: $negro;
+
+
+        .nav-link:hover {
+            color: $negro;
+        }
+
+        .nav-link:focus {
+            color: $negro;
+        }
+    }
+
+}
+
+
+
+.header__liCategoria {
+    padding: 0;
+
+    &:hover>.header__submenu {
+        transform: translate(0, 0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+
+.header__submenu {
+    display: block;
+    position: absolute;
+    margin-top: 0rem;
+    top: 1.8rem;
+    left: -2rem;
+    border: $borderNegro;
+    border-radius: .2rem;
+    overflow: hidden;
+    width: 12rem;
+    z-index: 20;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(0, 20%);
+    transition: $transicion;
+
+    & li {
+        display: flex;
+        align-items: center;
+        background: $blanco;
+        color: $negro;
+        height: 2.2rem;
+        padding: 0 .2rem;
+        transition: $transicion;
+    }
+
+    & li a {
+        color: $negro;
+        transition: $transicion;
+    }
+
+    & li:hover {
+        background: $negro;
+    }
+
+    & li:hover a {
+        color: $blanco;
+    }
+}
+
+@include tablet {
+    .dropdown-menu {
+        border-top: $borderNegro;
+        border-bottom: $borderNegro;
+    }
+}

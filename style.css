@@ -244,6 +244,7 @@ html {
 .header__toggler ion-icon {
   width: 3rem;
   height: 3rem;
+  color: black;
 }
 
 .header__collapse {
@@ -293,6 +294,9 @@ html {
 }
 .header__ul .nav-item:hover {
   border-bottom: 1px solid black;
+}
+.header__ul .nav-item:focus {
+  box-shadow: none;
 }
 .header__ul .nav-item:nth-child(3):hover {
   border-bottom: 1px solid white;

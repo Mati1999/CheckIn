@@ -245,6 +245,7 @@
 
     & ion-icon {
         @include medidas(3rem, 3rem);
+        color: $negro;
     }
 }
 
@@ -298,6 +299,10 @@
 
     .nav-item:hover {
         border-bottom: $borderNegro
+    }
+
+    .nav-item:focus {
+        box-shadow: none;
     }
 
     .nav-item:nth-child(3):hover {

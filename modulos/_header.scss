@@ -7,7 +7,7 @@
     position: sticky;
     top: 0rem;
     z-index: 1000;
-    background-color: $blanco;
+    background-color: $colorPrimario;
     box-shadow: 0 5px .5rem $grisOscuroTransparent;
     height: 100%;
 
@@ -17,7 +17,7 @@
 
     a {
         text-decoration: none;
-        color: $negro;
+        color: $colorTerciario;
     }
 
     & .row {
@@ -26,7 +26,7 @@
         @include tablet {
             flex-direction: row-reverse;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
         }
     }
 
@@ -37,12 +37,9 @@
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    position: relative;
-    z-index: 1100;
 
     @include tablet {
         justify-content: space-evenly;
-        // width: 100%;
     }
 
     img {
@@ -54,14 +51,17 @@
 .header__buscador {
     @include medidas(40%, 2rem);
     padding: .5rem;
-    border: 1px solid $grisClaro;
+    border: 1px solid $colorTerciario;
     border-radius: 1rem;
     outline: none;
     transition: $transicion;
+    background: $colorSecundario;
 
     &:hover,
     &:focus {
-        border: $borderNegro;
+        border: $borderPrimario;
+        background: $colorTerciario;
+        @include shadowTranslate(5px, 5px, 0, $colorSecundario, 0, -3px);
     }
 }
 
@@ -87,20 +87,21 @@
     align-items: center;
     border-radius: 1.5rem;
     transition: $transicion;
-    background: $blanco;
+    background: $colorPrimario;
 
     &:hover {
-        background: $negro;
+        background: $colorTerciario;
+        @include shadowTranslate(5px, 5px, 0, $colorSecundario, 0, -3px);
     }
 
     &:hover>input,
     &:hover>ion-icon {
-        color: $blanco;
+        color: $colorPrimario;
     }
 
     & ion-icon {
         @include medidas(1.5rem, 1.5rem);
-        color: $negro;
+        color: $colorTerciario;
     }
 
     & input {
@@ -108,7 +109,7 @@
         outline: none;
         margin-left: .5rem;
         background: none;
-        color: $negro
+        color: $colorTerciario
     }
 }
 
@@ -118,7 +119,7 @@
     top: 0;
     left: 0;
     z-index: 200;
-    background-color: $negro;
+    background-color: $colorTerciario;
 }
 
 .modal-dialog {
@@ -143,6 +144,7 @@
 
     .modal-content {
         height: 100%;
+        background: $colorPrimario;
 
         & form {
             height: 100%;
@@ -150,48 +152,61 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
+
         }
 
         & form div {
             width: 100%;
+            color: $colorTerciario;
         }
 
         & form h2 {
             font-size: 1.5rem;
+            color: $colorTerciario;
         }
 
         & form div input {
-            border: $borderBlanco;
+            background: $colorPrimario;
+            border: $borderPrimario;
+            color: $colorTerciario;
             border-radius: 0;
             padding: 0 0 0 .2rem;
             height: 2.5rem;
             width: 100%;
-            border-bottom: $borderNegro;
+            border-bottom: $borderTerciario;
             transition: $transicion;
+
         }
 
-        & form div input:hover {
-            border: $borderNegro;
-            border-radius: .2rem;
-        }
-
+        & form div input:hover,
         & form div input:focus {
+            background: $colorTerciario;
+            color: $colorPrimario;
             box-shadow: none;
+            border: $borderTerciario;
             border-radius: .2rem;
-            border: $borderNegro;
+
+            &::placeholder {
+                color: $colorPrimario;
+            }
+        }
+
+        & form div input::placeholder {
+            color: $colorTerciario;
         }
 
         & form button {
+            color: $colorTerciario;
             width: 50%;
-            border: $borderNegro;
+            border: $borderTerciario;
             border-radius: 1rem;
             transition: $transicion;
         }
 
         & form button:hover {
-            border: $borderNegro;
-            background: $negro;
-            color: $blanco;
+            border: $borderTerciario;
+            background: $colorTerciario;
+            color: $colorPrimario;
         }
     }
 }
@@ -205,19 +220,20 @@
     transition: $transicion;
 
     & a {
-        color: $negro;
+        color: $colorTerciario;
         transition: $transicion;
         display: flex;
         align-items: center;
     }
 
     &:hover {
-        background: $negro;
+        background: $colorTerciario;
         border-radius: .2rem;
+        @include shadowTranslate(5px, 5px, 0, $colorSecundario, 0, -3px);
     }
 
     &:hover a {
-        color: $blanco;
+        color: $colorPrimario;
     }
 
     & ion-icon {
@@ -226,15 +242,18 @@
 }
 
 .header__navbar {
+    display: flex;
+    align-items: center;
+
     @include tablet {
-        position: absolute;
-        top: 2rem;
-        left: 0;
+        position: relative;
+        top: 0;
+        margin-top: 1rem
     }
 }
 
 .header__toggler {
-    @include medidas(3rem, 3rem);
+    @include medidas(3rem, 100%);
 
     @include tablet {
 
@@ -248,7 +267,7 @@
 
     & ion-icon {
         @include medidas(3rem, 3rem);
-        color: $negro;
+        color: $colorTerciario;
     }
 }
 
@@ -257,12 +276,12 @@
 .header__collapse {
     display: flex;
     justify-content: center;
-    margin-top: .5rem;
+    margin-top: 1rem;
     padding-left: 0rem;
 
     @include tablet {
         justify-content: flex-start;
-        background: $blanco;
+        background: $colorPrimario;
         width: 100vw;
     }
 }
@@ -286,22 +305,24 @@
 
     .nav-item {
         height: 100%;
+        padding: 0 .8rem;
         list-style-type: none;
         position: relative;
-        border-bottom: $borderBlanco;
+        border: $borderPrimario;
+        border-radius: 1rem;
         transition: $transicion;
 
         @include tablet {
             border-bottom: none;
             margin: .5rem 0;
-            transition: $transicion;
             padding-left: 1rem;
         }
 
     }
 
     .nav-item:hover {
-        border-bottom: $borderNegro
+        @include shadowTranslate(5px, 5px, 0, $colorSecundario, 0, -3px);
+        border: $borderSecundario;
     }
 
     .nav-item:focus {
@@ -310,21 +331,29 @@
     }
 
     .nav-item:nth-child(3):hover {
-        border-bottom: $borderBlanco;
+        @include shadowTranslate(5px, 5px, 0, $colorSecundario, 0, -3px);
+        border: $borderSecundario;
+        border-bottom: $borderPrimario;
+
+        @include tablet {
+            @include shadowTranslate(0, 0, 0, $colorSecundario, 0, 0);
+            border: none;
+            border-bottom: $borderPrimario;
+        }
     }
 
     .nav-item a {
         font-size: 1.3rem;
         padding: 0;
-        color: $negro;
+        color: $colorTerciario;
 
 
         .nav-link:hover {
-            color: $negro;
+            color: $colorTerciario;
         }
 
         .nav-link:focus {
-            color: $negro;
+            color: $colorTerciario;
         }
     }
 
@@ -344,15 +373,14 @@
     }
 }
 
-
-
 .header__submenu {
     display: block;
     position: absolute;
     margin-top: 0rem;
     top: 1.8rem;
     left: -2rem;
-    border: $borderNegro;
+    border: $borderSecundario;
+    background: $colorPrimario;
     border-radius: .2rem;
     overflow: hidden;
     width: 12rem;
@@ -365,30 +393,57 @@
     & li {
         display: flex;
         align-items: center;
-        background: $blanco;
-        color: $negro;
+        background: $colorPrimario;
+        color: $colorTerciario;
         height: 2.2rem;
         padding: 0 .2rem;
         transition: $transicion;
     }
 
     & li a {
-        color: $negro;
+        color: $colorTerciario;
         transition: $transicion;
     }
 
     & li:hover {
-        background: $negro;
+        background: $colorTerciario;
     }
 
     & li:hover a {
-        color: $blanco;
+        @include shadowTranslate(0, 0, 0, $colorSecundario, 5px, 0);
+        color: $colorPrimario;
     }
 }
 
 @include tablet {
     .dropdown-menu {
-        border-top: $borderNegro;
-        border-bottom: $borderNegro;
+        border: none;
+        background: transparent;
+
+        & li {
+            display: flex;
+            align-items: center;
+            background: $colorPrimario;
+            color: $colorTerciario;
+            height: 2.2rem;
+            margin-left: .5rem;
+            border-left: $borderTerciario;
+            padding: 0 .2rem;
+            transition: $transicion;
+        }
+
+        & li a {
+            color: $colorTerciario;
+            transition: $transicion;
+        }
+
+        & li:hover {
+            background: $colorTerciario;
+        }
+
+        & li:hover a {
+            @include shadowTranslate(0, 0, 0, $colorSecundario, 5px, 0);
+            color: $colorPrimario;
+        }
     }
 }

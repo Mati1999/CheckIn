@@ -5,6 +5,7 @@
 /*   MAIN   */
 .loMasVendidoMain {
     padding: 2rem 4rem;
+    background: linear-gradient(to bottom, $colorSecundario, $colorTerciario);
 
     @include mobile {
         padding: 2rem 1rem

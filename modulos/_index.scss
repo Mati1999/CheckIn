@@ -1,6 +1,11 @@
 @import '../utilidades/variables';
 @import 'mediaQueries';
 
+
+.indexMain {
+    background: linear-gradient(to bottom, $colorSecundario, $colorTerciario);
+}
+
 /*   CARRUSEL DE IMAGENES   */
 
 .indexMain__carrusel {
@@ -43,8 +48,12 @@
 
     @include miniMobile {
         margin-bottom: 0;
+    }
 
-        & h2 {
+    & h2 {
+        color: $colorPrimario;
+
+        @include miniMobile {
             font-size: 1.3rem;
         }
     }
@@ -55,8 +64,8 @@
     }
 
     & h4 {
-        color: $negro;
-        border-bottom: $borderBlanco;
+        color: $colorPrimario;
+        border-bottom: transparent;
         transition: $transicion;
 
         @include miniMobile {
@@ -66,21 +75,25 @@
     }
 
     & a:hover>h4 {
-        border-bottom: $borderNegro;
+        border-bottom: $borderPrimario;
     }
 }
 
 .producto {
     overflow: hidden;
-    padding: 0;
+    padding: .2rem;
+    border-radius: .5rem;
+    background: $colorTerciario;
+    transition: $transicion;
 
     & img {
         width: 100%;
+        border-radius: .5rem;
         transition: $transicion;
     }
 
-    &:hover img {
-        transform: scale(1.1, 1.1);
+    &:hover {
+        @include shadowTranslate(4px, 4px, 10px, $colorPrimario, 0, -3px);
     }
 
     &--destacado,
@@ -94,7 +107,7 @@
     @include medidas(3rem, 2rem);
     position: absolute;
     right: 0;
-    background-color: $negro;
+    background-color: $colorTerciario;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,14 +115,15 @@
     z-index: 110;
 
     & span {
-        color: $blanco;
+        font-weight: 700;
+        color: $colorPrimario;
     }
 }
 
 .producto__info {
     position: relative;
     z-index: 100;
-    background: $blanco;
+    background: $colorTerciario;
 }
 
 /*   SECTION DESTACADOS   */
@@ -131,20 +145,23 @@
 
     @include miniMobile {
         margin-bottom: 0;
+    }
 
-        & h2 {
+    & h2 {
+        color: $colorPrimario;
+
+        @include miniMobile {
             font-size: 1.3rem;
         }
     }
-
 
     & a {
         text-decoration: none;
     }
 
     & h4 {
-        color: $negro;
-        border-bottom: $borderBlanco;
+        color: $colorPrimario;
+        border-bottom: transparent;
         transition: $transicion;
 
         @include miniMobile {
@@ -154,7 +171,7 @@
     }
 
     & a:hover>h4 {
-        border-bottom: $borderNegro;
+        border-bottom: $borderPrimario;
     }
 
 }
@@ -183,6 +200,7 @@
 
     & h2 {
         display: inline;
+        color: $colorPrimario;
 
         @include miniMobile {
             font-size: 1.3rem;
@@ -195,8 +213,8 @@
     }
 
     & h4 {
-        color: $negro;
-        border-bottom: $borderBlanco;
+        color: $colorPrimario;
+        border-bottom: transparent;
         transition: $transicion;
 
         @include miniMobile {
@@ -205,7 +223,7 @@
     }
 
     & a:hover>h4 {
-        border-bottom: $borderNegro;
+        border-bottom: $borderPrimario;
     }
 }
 

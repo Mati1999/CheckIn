@@ -689,7 +689,7 @@ html {
 @media only screen and (max-width: 575px) {
   .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
     font-size: 1.8rem;
-    left: 2rem;
+    left: 2.5rem;
   }
 }
 .carousel-item__h4 {

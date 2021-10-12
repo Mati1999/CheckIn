@@ -3,7 +3,7 @@
 
 
 .header {
-    padding: 1rem 0;
+    padding: .5rem 0;
     position: sticky;
     top: 0rem;
     z-index: 1000;
@@ -43,7 +43,7 @@
     }
 
     img {
-        width: 10rem;
+        width: 8rem;
     }
 }
 
@@ -88,6 +88,7 @@
     border-radius: 1.5rem;
     transition: $transicion;
     background: $colorPrimario;
+    box-shadow: -23 -23 45 #ffffff, 28 28 50 #0d27502f;
 
     &:hover {
         background: $colorTerciario;
@@ -280,11 +281,11 @@
 .header__collapse {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
     padding-left: 0rem;
 
     @include tablet {
         justify-content: flex-start;
+        margin-top: 1rem;
         background: $colorPrimario;
         position: absolute;
         top: 85%;
@@ -314,7 +315,7 @@
         padding: 0 .8rem;
         list-style-type: none;
         position: relative;
-        border: $borderPrimario;
+        border: 1px solid transparent;
         border-radius: 1rem;
         transition: $transicion;
 
@@ -347,7 +348,7 @@
         }
     }
 
-    .nav-item a {
+    .nav-link {
         font-size: 1.3rem;
         padding: 0;
         color: $colorTerciario;
@@ -379,44 +380,59 @@
 }
 
 .header__submenu {
-    display: block;
+    display: flex;
     position: absolute;
     margin-top: 0rem;
-    top: 1.8rem;
-    left: -2rem;
+    top: 2rem;
+    left: -10rem;
     border: $borderSecundario;
     background: $colorPrimario;
     border-radius: .2rem;
     overflow: hidden;
-    width: 12rem;
     z-index: 20;
     visibility: hidden;
     opacity: 0;
     transform: translate(0, 20%);
     transition: $transicion;
 
+    @include tablet {
+        display: none;
+    }
+
     & li {
         display: flex;
         align-items: center;
-        background: $colorPrimario;
-        color: $colorTerciario;
-        height: 2.2rem;
-        padding: 0 .2rem;
-        transition: $transicion;
-    }
-
-    & li a {
-        color: $colorTerciario;
+        background: $colorTerciario;
+        color: $colorPrimario;
+        @include medidas (15rem, 15rem);
+        padding: 1rem;
         transition: $transicion;
     }
 
     & li:hover {
-        background: $colorTerciario;
+        background: $colorPrimario;
+    }
+
+    .header__imgCategoria {
+        @include medidas(100%, 85%);
+        overflow: hidden;
+
+        & img {
+            @include medidas(100%, 100%);
+            object-fit: cover;
+            border-radius: .3rem;
+        }
+    }
+
+    & li a {
+        @include medidas (100%, 100%);
+        color: $colorPrimario;
+        font-size: 1.3rem;
+        transition: $transicion;
     }
 
     & li:hover a {
-        @include shadowTranslate(0, 0, 0, $colorSecundario, 5px, 0);
-        color: $colorPrimario;
+        color: $colorTerciario;
     }
 }
 

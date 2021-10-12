@@ -16,7 +16,7 @@ html {
 }
 
 .header {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   position: sticky;
   top: 0rem;
   z-index: 1000;
@@ -56,7 +56,7 @@ html {
   }
 }
 .header__menu img {
-  width: 10rem;
+  width: 8rem;
 }
 
 .header__buscador, .header__buscadorMobile {
@@ -97,6 +97,7 @@ html {
   border-radius: 1.5rem;
   transition: all 0.3s ease;
   background: #4a707a;
+  box-shadow: -23 -23 45 #ffffff, 28 28 50 #0d27502f;
 }
 .header__botonSesion:hover {
   background: #DDDDDA;
@@ -276,12 +277,12 @@ html {
 .header__collapse {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
   padding-left: 0rem;
 }
 @media only screen and (max-width: 991px) {
   .header__collapse {
     justify-content: flex-start;
+    margin-top: 1rem;
     background: #4a707a;
     position: absolute;
     top: 85%;
@@ -310,7 +311,7 @@ html {
   padding: 0 0.8rem;
   list-style-type: none;
   position: relative;
-  border: 1px solid #4a707a;
+  border: 1px solid transparent;
   border-radius: 1rem;
   transition: all 0.3s ease;
 }
@@ -344,15 +345,15 @@ html {
     border-bottom: 1px solid #4a707a;
   }
 }
-.header__ul .nav-item a {
+.header__ul .nav-link {
   font-size: 1.3rem;
   padding: 0;
   color: #DDDDDA;
 }
-.header__ul .nav-item a .nav-link:hover {
+.header__ul .nav-link .nav-link:hover {
   color: #DDDDDA;
 }
-.header__ul .nav-item a .nav-link:focus {
+.header__ul .nav-link .nav-link:focus {
   color: #DDDDDA;
 }
 
@@ -368,42 +369,59 @@ html {
 }
 
 .header__submenu {
-  display: block;
+  display: flex;
   position: absolute;
   margin-top: 0rem;
-  top: 1.8rem;
-  left: -2rem;
+  top: 2rem;
+  left: -10rem;
   border: 1px solid #94B0B7;
   background: #4a707a;
   border-radius: 0.2rem;
   overflow: hidden;
-  width: 12rem;
   z-index: 20;
   visibility: hidden;
   opacity: 0;
   transform: translate(0, 20%);
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 991px) {
+  .header__submenu {
+    display: none;
+  }
+}
 .header__submenu li {
   display: flex;
   align-items: center;
-  background: #4a707a;
-  color: #DDDDDA;
-  height: 2.2rem;
-  padding: 0 0.2rem;
-  transition: all 0.3s ease;
-}
-.header__submenu li a {
-  color: #DDDDDA;
+  background: #DDDDDA;
+  color: #4a707a;
+  width: 15rem;
+  height: 15rem;
+  padding: 1rem;
   transition: all 0.3s ease;
 }
 .header__submenu li:hover {
-  background: #DDDDDA;
+  background: #4a707a;
+}
+.header__submenu .header__imgCategoria {
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+}
+.header__submenu .header__imgCategoria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+.header__submenu li a {
+  width: 100%;
+  height: 100%;
+  color: #4a707a;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
 }
 .header__submenu li:hover a {
-  box-shadow: 0 0 0 #94B0B7;
-  transform: translate(5px, 0);
-  color: #4a707a;
+  color: #DDDDDA;
 }
 
 @media only screen and (max-width: 991px) {
@@ -641,11 +659,64 @@ html {
 .carousel-item {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(70%);
+}
+.carousel-item__h3, .carousel-item__h4, .carousel-item__a {
+  position: absolute;
+  color: #DDDDDA;
+  font-size: 3rem;
+  top: 3rem;
+  left: 10rem;
+}
+@media only screen and (max-width: 991px) {
+  .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
+    font-size: 2.5rem;
+    left: 8rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
+    font-size: 2rem;
+    left: 6rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
+    font-size: 1.8rem;
+    left: 2rem;
+  }
+}
+.carousel-item__h4 {
+  font-size: 1.3rem;
+  top: 8rem;
+}
+@media only screen and (max-width: 575px) {
+  .carousel-item__h4 {
+    font-size: 0.8rem;
+  }
+}
+.carousel-item__a {
+  top: 11rem;
+  text-decoration: 1px solid transparent;
+  font-size: 3rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.carousel-item:hover > .carousel-item__a {
+  color: #DDDDDA;
+  transform: scale(1.1, 1.1);
+  text-decoration: underline;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 11%;
 }
 
 /*   SECTION CATEGORÍAS   */
@@ -675,11 +746,16 @@ html {
 }
 @media only screen and (max-width: 575px) {
   .indexMain__categoriasTitulo h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 .indexMain__categoriasTitulo a {
   text-decoration: none;
+}
+@media only screen and (max-width: 575px) {
+  .indexMain__categoriasTitulo a {
+    text-align: right;
+  }
 }
 .indexMain__categoriasTitulo h4 {
   color: #4a707a;
@@ -688,7 +764,7 @@ html {
 }
 @media only screen and (max-width: 575px) {
   .indexMain__categoriasTitulo h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .indexMain__categoriasTitulo a:hover > h4 {
@@ -765,11 +841,16 @@ html {
 }
 @media only screen and (max-width: 575px) {
   .indexMain__destacadosTitulo h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 .indexMain__destacadosTitulo a {
   text-decoration: none;
+}
+@media only screen and (max-width: 575px) {
+  .indexMain__destacadosTitulo a {
+    text-align: right;
+  }
 }
 .indexMain__destacadosTitulo h4 {
   color: #4a707a;
@@ -778,7 +859,7 @@ html {
 }
 @media only screen and (max-width: 575px) {
   .indexMain__destacadosTitulo h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .indexMain__destacadosTitulo a:hover > h4 {
@@ -812,11 +893,16 @@ html {
 }
 @media only screen and (max-width: 575px) {
   .indexMain__ofertasTitulo h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 .indexMain__ofertasTitulo a {
   text-decoration: none;
+}
+@media only screen and (max-width: 575px) {
+  .indexMain__ofertasTitulo a {
+    text-align: right;
+  }
 }
 .indexMain__ofertasTitulo h4 {
   color: #4a707a;
@@ -825,7 +911,7 @@ html {
 }
 @media only screen and (max-width: 575px) {
   .indexMain__ofertasTitulo h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .indexMain__ofertasTitulo a:hover > h4 {
@@ -834,6 +920,26 @@ html {
 
 .producto__info--oferta :nth-child(2) {
   text-decoration: line-through;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.indumentariaMain {
+  height: 100%;
+  background: linear-gradient(to bottom, #94B0B7, #DDDDDA);
+  padding: 2rem 0;
+}
+
+.filtro {
+  height: 100%;
+  background: #DDDDDA;
+}
+
+.indumentariaMain__productos {
+  height: 100%;
 }
 
 html {
@@ -997,16 +1103,17 @@ html {
 
 .contactoMain {
   width: 100%;
-  height: 80vh;
+  height: 100%;
   background: url(images/bgContacto.jpg);
-  filter: brightness(85%);
-  background-position: 50% 50%;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  filter: brightness(85%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem 0;
 }
 
 .contactoMain__contenedor {
@@ -1033,6 +1140,16 @@ html {
   height: 80%;
   width: 40%;
 }
+@media only screen and (max-width: 991px) {
+  .form {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .form {
+    width: 80%;
+  }
+}
 
 .form__Nombre,
 .form__Apellido {
@@ -1047,6 +1164,13 @@ html {
 .form__Nombre::placeholder,
 .form__Apellido::placeholder {
   color: #DDDDDA;
+}
+@media only screen and (max-width: 575px) {
+  .form__Nombre,
+.form__Apellido {
+    font-size: 1.2rem;
+    width: 70%;
+  }
 }
 
 .form__Email {
@@ -1063,6 +1187,11 @@ html {
 }
 .form__Email::placeholder {
   color: #DDDDDA;
+}
+@media only screen and (max-width: 575px) {
+  .form__Email {
+    font-size: 1.2rem;
+  }
 }
 
 .form__mensaje {
@@ -1089,12 +1218,19 @@ html {
   display: flex;
   justify-content: space-around;
 }
+@media only screen and (max-width: 991px) {
+  .form__Buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
 
 .form__submit,
 .form__reset {
   border: 1px solid #4a707a;
   background: #4a707a;
-  width: 10rem;
+  width: 45%;
   height: 2rem;
   border-radius: 1.5rem;
   font-size: 1.2rem;
@@ -1106,6 +1242,49 @@ html {
 .form__reset:hover,
 .form__reset:hover {
   border: 1px solid #4a707a;
+  background: #DDDDDA;
+  color: #4a707a;
+}
+@media only screen and (max-width: 991px) {
+  .form__submit,
+.form__reset {
+    width: 70%;
+  }
+}
+
+html {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.error404 {
+  background-color: #4a707a;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.error404__a img {
+  width: 10rem;
+}
+.error404__404 {
+  font-size: 15rem;
+}
+.error404__info {
+  font-size: 1.3rem;
+  color: #DDDDDA;
+}
+.error404__home input {
+  border: 1px solid #DDDDDA;
+  color: #DDDDDA;
+  background: transparent;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+.error404__home input:hover {
   background: #DDDDDA;
   color: #4a707a;
 }

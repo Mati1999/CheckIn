@@ -1,0 +1,17 @@
+@import '../utilidades/variables';
+@import 'mediaQueries';
+
+.indumentariaMain {
+    height: 100%;
+    background: linear-gradient(to bottom, $colorSecundario, $colorTerciario);
+    padding: 2rem 0;
+}
+
+.filtro {
+    height: 100%;
+    background: $colorTerciario;
+}
+
+.indumentariaMain__productos {
+    height: 100%;
+}

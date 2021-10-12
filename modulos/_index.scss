@@ -22,11 +22,66 @@
 
 .carousel-item {
     @include medidas(100%, 100%);
+    position: relative;
 
     & img {
         @include medidas(100%, 100%);
         object-fit: cover;
+        filter: brightness(70%);
     }
+
+    &__h3,
+    &__h4,
+    &__a {
+        position: absolute;
+        color: $colorTerciario;
+        font-size: 3rem;
+        top: 3rem;
+        left: 10rem;
+
+        @include tablet {
+            font-size: 2.5rem;
+            left: 8rem;
+        }
+
+        @include mobile {
+            font-size: 2rem;
+            left: 6rem;
+        }
+
+        @include miniMobile {
+            font-size: 1.8rem;
+            left: 2rem;
+        }
+    }
+
+    &__h4 {
+        font-size: 1.3rem;
+        top: 8rem;
+
+        @include miniMobile {
+            font-size: .8rem;
+        }
+    }
+
+    &__a {
+        top: 11rem;
+        text-decoration: 1px solid transparent;
+        font-size: 3rem;
+        font-weight: 700;
+        transition: $transicion;
+    }
+
+    &:hover>&__a {
+        color: $colorTerciario;
+        transform: scale(1.1, 1.1);
+        text-decoration: underline;
+    }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 11%;
 }
 
 /*   SECTION CATEGORÍAS   */
@@ -54,12 +109,16 @@
         color: $colorPrimario;
 
         @include miniMobile {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
     }
 
     & a {
         text-decoration: none;
+
+        @include miniMobile {
+            text-align: right;
+        }
 
     }
 
@@ -69,7 +128,7 @@
         transition: $transicion;
 
         @include miniMobile {
-            font-size: 1rem;
+            font-size: .9rem;
         }
 
     }
@@ -151,12 +210,16 @@
         color: $colorPrimario;
 
         @include miniMobile {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
     }
 
     & a {
         text-decoration: none;
+
+        @include miniMobile {
+            text-align: right;
+        }
     }
 
     & h4 {
@@ -165,7 +228,7 @@
         transition: $transicion;
 
         @include miniMobile {
-            font-size: 1rem;
+            font-size: .9rem;
         }
 
     }
@@ -203,13 +266,17 @@
         color: $colorPrimario;
 
         @include miniMobile {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
 
     }
 
     & a {
         text-decoration: none;
+
+        @include miniMobile {
+            text-align: right;
+        }
     }
 
     & h4 {
@@ -218,7 +285,7 @@
         transition: $transicion;
 
         @include miniMobile {
-            font-size: 1rem;
+            font-size: .9rem;
         }
     }
 

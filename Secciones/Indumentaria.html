@@ -163,7 +163,7 @@
                                                 <div class="header__imgCategoria">
                                                     <img src="../images/indumentaria.jpg" alt="">
                                                 </div>
-                                                <span>
+                                                <span class="active">
                                                     Indumentaria
                                                 </span>
                                             </a>
@@ -208,7 +208,7 @@
                                     <a class="nav-link p-0" href="Novedades.html">Novedades</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link p-0 active" href="LoMasVendido.html">Lo mas vendido</a>
+                                    <a class="nav-link p-0" href="LoMasVendido.html">Lo mas vendido</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link p-0" href="Ofertas.html">Ofertas</a>
@@ -226,62 +226,155 @@
 
 
         <main class="indumentariaMain container-fluid overflow-hidden">
-            <div class="row ">
-                <div class="filtro col-lg-2 col-12">
-                    <h2>Aquí van los filtros</h2>
+            <div class="row">
+                <div class="filtro col-lg-3 col-12">
+                    <div class="filtro__categorias">
+                        <h3 class="filtro__h3categoria">Categoría</h3>
+                        <div class="filtro__hombre">
+                            <input type="radio" name="categoria" id="">
+                            <label for="categoria">Hombre</label>
+                        </div>
+                        <div class="filtro__mujer">
+                            <input type="radio" name="categoria" id="">
+                            <label for="categoria">Mujer</label>
+                        </div>
+                        <div class="filtro__zapatillas">
+                            <input type="radio" name="categoria" id="">
+                            <label for="categoria">Zapatillas</label>
+                        </div>
+                        <div class="filtro__remeras">
+                            <input type="radio" name="categoria" id="">
+                            <label for="categoria">Remeras</label>
+                        </div>
+                        <div class="filtro__pantalon">
+                            <input type="radio" name="categoria" id="">
+                            <label for="categoria">Pantalones</label>
+                        </div>
+                        <div class="filtro__accesorios">
+                            <input type="radio" name="categoria" id="">
+                            <label for="categoria">Accesorios</label>
+                        </div>
+                    </div>
+                    <div class="filtro__precios">
+                        <h3 class="filtro__h3precio">Precio</h3>
+                        <div class="filtro__precioMin">
+                            <input type="radio" name="precio" id="">
+                            <label for="precio">$0 - $50</label>
+                        </div>
+                        <div class="filtro__precioMid">
+                            <input type="radio" name="precio" id="">
+                            <label for="precio">$50 - $150</label>
+                        </div>
+                        <div class="filtro__precioMax">
+                            <input type="radio" name="precio" id="">
+                            <label for="precio">$150 - $300</label>
+                        </div>
+                    </div>
+                    <div class="filtro__loMasVendido">
+                        <h3 class="filtro__h3LoMasVendido">
+                            Los mas vendidos
+                        </h3>
+                        <div class="filtro__productos">
+                            <div class="miniProducto">
+                                <a class="miniProducto__aSelector" href="">
+                                    <div class="miniProducto__imcContainer">
+                                        <img class="miniProducto__img" src="../images/mochila.jpg" alt="">
+                                    </div>
+                                    <div class="miniProducto__info">
+                                        <h5 class="miniProducto__nombre">Producto 1</h5>
+                                        <span class="miniProducto__precio">$29.99</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="miniProducto">
+                                <a class="miniProducto__aSelector" href="">
+                                    <div class="miniProducto__imcContainer">
+                                        <img class="miniProducto__img" src="../images/mochila.jpg" alt="">
+                                    </div>
+                                    <div class="miniProducto__info">
+                                        <h5 class="miniProducto__nombre">Producto 1</h5>
+                                        <span class="miniProducto__precio">$29.99</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="miniProducto">
+                                <a class="miniProducto__aSelector" href="">
+                                    <div class="miniProducto__imcContainer">
+                                        <img class="miniProducto__img" src="../images/mochila.jpg" alt="">
+                                    </div>
+                                    <div class="miniProducto__info">
+                                        <h5 class="miniProducto__nombre">Producto 1</h5>
+                                        <span class="miniProducto__precio">$29.99</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="miniProducto">
+                                <a class="miniProducto__aSelector" href="">
+                                    <div class="miniProducto__imcContainer">
+                                        <img class="miniProducto__img" src="../images/mochila.jpg" alt="">
+                                    </div>
+                                    <div class="miniProducto__info">
+                                        <h5 class="miniProducto__nombre">Producto 1</h5>
+                                        <span class="miniProducto__precio">$29.99</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="indumentariaMain__productos container-fluid col-lg-10 col-12">
+
+                <div class="indumentariaMain__productos container-fluid align-self-center col-lg-9 col-12">
                     <div class="row justify-content-evenly overflow-hidden">
-                        <div class="producto mt-3 col-lg-2 ms-lg-5 col-md-3 ms-md-3 col-sm-5 col-5">
+                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
                             <img src="../images/producto1.jpg" alt="producto1">
                             <div class="producto__info">
                                 <h5>Producto 1</h5>
                                 <span>$###</span>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 ms-lg-5 col-md-3 ms-md-3 col-sm-5 col-5">
+                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
                             <img src="../images/producto1.jpg" alt="producto1">
                             <div class="producto__info">
                                 <h5>Producto 1</h5>
                                 <span>$###</span>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 ms-lg-5 col-md-3 ms-md-3 col-sm-5 col-5">
+                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
                             <img src="../images/producto1.jpg" alt="producto1">
                             <div class="producto__info">
                                 <h5>Producto 1</h5>
                                 <span>$###</span>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 ms-lg-5 col-md-3 ms-md-3 col-sm-5 col-5">
+                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
                             <img src="../images/producto1.jpg" alt="producto1">
                             <div class="producto__info">
                                 <h5>Producto 1</h5>
                                 <span>$###</span>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 ms-lg-5 col-md-3 ms-md-3 col-sm-5 col-5">
+                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
                             <img src="../images/producto1.jpg" alt="producto1">
                             <div class="producto__info">
                                 <h5>Producto 1</h5>
                                 <span>$###</span>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 ms-lg-5 col-md-3 ms-md-3 col-sm-5 col-5">
+                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
                             <img src="../images/producto1.jpg" alt="producto1">
                             <div class="producto__info">
                                 <h5>Producto 1</h5>
                                 <span>$###</span>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 ms-lg-5 col-md-3 ms-md-3 col-sm-5 col-5">
+                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
                             <img src="../images/producto1.jpg" alt="producto1">
                             <div class="producto__info">
                                 <h5>Producto 1</h5>
                                 <span>$###</span>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 ms-lg-5 col-md-3 ms-md-3 col-sm-5 col-5">
+                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
                             <img src="../images/producto1.jpg" alt="producto1">
                             <div class="producto__info">
                                 <h5>Producto 1</h5>
@@ -289,7 +382,7 @@
                             </div>
                         </div>
                         <div
-                            class="producto mt-3 col-lg-2 ms-lg-5 col-md-3 ms-md-3 col-sm-5 col-5 d-lg-none d-md-block d-none">
+                            class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5 d-lg-none d-md-block d-none">
                             <img src="../images/producto1.jpg" alt="producto1">
                             <div class="producto__info">
                                 <h5>Producto 1</h5>

@@ -4,14 +4,72 @@
 .indumentariaMain {
     height: 100%;
     background: linear-gradient(to bottom, $colorSecundario, $colorTerciario);
-    padding: 2rem 0;
 }
 
 .filtro {
     height: 100%;
+    padding: 0 1rem 0 0;
+}
+
+.filtro__categorias,
+.filtro__precios,
+.filtro__loMasVendido {
     background: $colorTerciario;
+    padding: 1rem;
+}
+
+.filtro__categorias {
+
+    input {
+        @include medidas(1rem, 1rem);
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+}
+
+.filtro__productos {
+    @include medidas(100%, 100%);
+}
+
+.miniProducto {
+    @include medidas(100%, 100%);
+    margin-top: 1rem;
+
+
+    &__aSelector {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        color: $colorTerciario;
+        background: $colorSecundario;
+        transition: $transicion;
+        border-radius: .3rem;
+    }
+
+    &__aSelector:hover {
+        color: $colorTerciario;
+        @include shadowTranslate(2px, 2px, 4px, $colorPrimario, 0, -3px);
+    }
+
+    &__imcContainer {
+        @include medidas(40%, 100%);
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: fill;
+        border-radius: .3rem;
+    }
+
+    &__info {
+        @include medidas(50%, 100%);
+    }
 }
 
 .indumentariaMain__productos {
     height: 100%;
+    margin: 2rem 0 0 0;
 }

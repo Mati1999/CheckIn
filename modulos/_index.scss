@@ -138,6 +138,13 @@
     }
 }
 
+.indexMain__modalProducto {
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
 .producto {
     overflow: hidden;
     padding: .2rem;

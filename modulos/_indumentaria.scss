@@ -20,13 +20,33 @@
 
 .filtro__categorias {
 
+    div {
+        margin: 1rem 0;
+    }
+
     input {
         @include medidas(1rem, 1rem);
+        margin: 0 1rem;
     }
 
     label {
         font-size: 1.2rem;
+        width: 60%;
+        height: 2.5rem;
+        background: $colorSecundario;
+        border-radius: 1.5rem;
+        display: flex;
+        align-items: center;
+        transition: $transicion;
     }
+
+    label:hover {
+        @include shadowTranslate(-4px, 4px, 4px, $colorPrimario, 5px, 0);
+    }
+}
+
+.filtro__precios {
+    @extend .filtro__categorias;
 }
 
 .filtro__productos {
@@ -50,7 +70,7 @@
     }
 
     &__aSelector:hover {
-        color: $colorTerciario;
+        color: $negro;
         @include shadowTranslate(2px, 2px, 4px, $colorPrimario, 0, -3px);
     }
 
@@ -71,5 +91,5 @@
 
 .indumentariaMain__productos {
     height: 100%;
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 0 0;
 }

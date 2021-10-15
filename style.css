@@ -771,6 +771,10 @@ html {
   border-bottom: 1px solid #4a707a;
 }
 
+.indexMain__modalProducto:focus {
+  box-shadow: none;
+}
+
 .producto {
   overflow: hidden;
   padding: 0.2rem;
@@ -944,12 +948,27 @@ html {
   padding: 1rem;
 }
 
-.filtro__categorias input {
+.filtro__categorias div, .filtro__precios div {
+  margin: 1rem 0;
+}
+.filtro__categorias input, .filtro__precios input {
   width: 1rem;
   height: 1rem;
+  margin: 0 1rem;
 }
-.filtro__categorias label {
+.filtro__categorias label, .filtro__precios label {
   font-size: 1.2rem;
+  width: 60%;
+  height: 2.5rem;
+  background: #94B0B7;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.filtro__categorias label:hover, .filtro__precios label:hover {
+  box-shadow: -4px 4px 4px #4a707a;
+  transform: translate(5px, 0);
 }
 
 .filtro__productos {
@@ -973,7 +992,7 @@ html {
   border-radius: 0.3rem;
 }
 .miniProducto__aSelector:hover {
-  color: #DDDDDA;
+  color: black;
   box-shadow: 2px 2px 4px #4a707a;
   transform: translate(0, -3px);
 }
@@ -993,7 +1012,7 @@ html {
 
 .indumentariaMain__productos {
   height: 100%;
-  margin: 2rem 0 0 0;
+  margin: 3rem 0 0 0;
 }
 
 html {

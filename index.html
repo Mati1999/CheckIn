@@ -37,7 +37,7 @@
                     <div class="header__inicioSesion">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn p-0 header__botonModal" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                            data-bs-target="#inicioSesionModal">
                             <div class="header__botonSesion d-none d-lg-flex">
                                 <ion-icon name="person-outline"></ion-icon>
                                 <input type="button" value="Inicia Sesión">
@@ -45,8 +45,8 @@
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
+                        <div class="modal fade" id="inicioSesionModal" tabindex="-1"
+                            aria-labelledby="inicioSesionModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content p-3">
 
@@ -111,7 +111,7 @@
                                 <div>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn p-0 header__botonModal" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal">
+                                        data-bs-target="#inicioSesionModal">
                                         <div class="header__botonSesion p-0 d-lg-none">
                                             <ion-icon name="person-outline"></ion-icon>
                                             <input type="button" value="Inicia Sesión">
@@ -119,8 +119,8 @@
                                     </button>
 
                                     <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1"
-                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id="inicioSesionModal" tabindex="-1"
+                                        aria-labelledby="inicioSesionModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content p-3">
 
@@ -291,51 +291,207 @@
                     <div class="indexMain__categoriasProductos container-fluid p-0">
                         <div class="row m-0 justify-content-between">
 
-                            <div class="producto mt-3 col-lg-2 col-md-3 col-sm-5 col-5">
-                                <img src="images/producto1.jpg" alt="producto1">
-                                <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                            <!-- PRIMER PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 col-md-3 col-sm-5 col-5"
+                                data-bs-toggle="modal" data-bs-target="#productoIndex1">
+                                <div class="producto">
+                                    <img src="images/producto1.jpg" alt="producto1">
+                                    <div class="producto__info">
+                                        <h5>Producto 1</h5>
+                                        <span>$###</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndex1" tabindex="-1"
+                                aria-labelledby="productoIndex1Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndex1Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 1
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div
-                                class="producto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1">
-                                <img src="images/producto1.jpg" alt="producto1">
-                                <div class="producto__info">
-                                    <h5>Producto 2</h5>
-                                    <span>$###</span>
+
+                            <!-- SEGUNDO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1"
+                                data-bs-toggle="modal" data-bs-target="#productoIndex2">
+                                <div class="producto ">
+                                    <img src="images/producto1.jpg" alt="producto1">
+                                    <div class="producto__info">
+                                        <h5>Producto 2</h5>
+                                        <span>$###</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndex2" tabindex="-1"
+                                aria-labelledby="productoIndex2Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndex2Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 2
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="producto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5">
-                                <img src="images/producto1.jpg" alt="producto1">
-                                <div class="producto__info">
-                                    <h5>Producto 3</h5>
-                                    <span>$###</span>
+
+                            <!-- TERCER PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5"
+                                data-bs-toggle="modal" data-bs-target="#productoIndex3">
+                                <div class="producto ">
+                                    <img src="images/producto1.jpg" alt="producto1">
+                                    <div class="producto__info">
+                                        <h5>Producto 3</h5>
+                                        <span>$###</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndex3" tabindex="-1"
+                                aria-labelledby="productoIndex3Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndex3Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 3
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div
-                                class="producto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-0 col-sm-5 offset-sm-1 col-5 offset-1">
-                                <img src="images/producto1.jpg" alt="producto1">
-                                <div class="producto__info">
-                                    <h5>Producto 4</h5>
-                                    <span>$###</span>
+                            <!-- CUARTO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto  mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-0 col-sm-5 offset-sm-1 col-5 offset-1"
+                                data-bs-toggle="modal" data-bs-target="#productoIndex4">
+                                <div class="producto">
+                                    <img src="images/producto1.jpg" alt="producto1">
+                                    <div class="producto__info">
+                                        <h5>Producto 4</h5>
+                                        <span>$###</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndex4" tabindex="-1"
+                                aria-labelledby="productoIndex4Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndex4Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 4
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="producto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5">
-                                <img src="images/producto1.jpg" alt="producto1">
-                                <div class="producto__info">
-                                    <h5>Producto 4</h5>
-                                    <span>$###</span>
+                            <!-- QUINTO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5"
+                                data-bs-toggle="modal" data-bs-target="#productoIndex5">
+                                <div class="producto ">
+                                    <img src="images/producto1.jpg" alt="producto1">
+                                    <div class="producto__info">
+                                        <h5>Producto 5</h5>
+                                        <span>$###</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndex5" tabindex="-1"
+                                aria-labelledby="productoIndex2Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndex5Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 5
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div
-                                class="producto d-lg-none mt-3 col-md-3 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1">
-                                <img src="images/producto1.jpg" alt="producto1">
-                                <div class="producto__info">
-                                    <h5>Producto 4</h5>
-                                    <span>$###</span>
+                            <!-- SEXTO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto d-lg-none mt-3 col-md-3 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1"
+                                data-bs-toggle="modal" data-bs-target="#productoIndex6">
+                                <div class="producto">
+                                    <img src="images/producto1.jpg" alt="producto1">
+                                    <div class="producto__info">
+                                        <h5>Producto 6</h5>
+                                        <span>$###</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndex6" tabindex="-1"
+                                aria-labelledby="productoIndex6Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndex6Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 6
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -350,75 +506,238 @@
                     </div>
                     <div class="indexMain__destacadosProductos container-fluid p-0">
                         <div class="row m-0 justify-content-between">
-                            <div class="producto producto--destacado mt-3 col-lg-2 col-md-3 col-sm-5 col-5">
-                                <div class="producto__numeroTop">
-                                    <span>#1</span>
+
+
+                            <!-- PRIMER PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 col-md-3 col-sm-5 col-5"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                                <div class="producto producto--destacado ">
+                                    <div class="producto__numeroTop">
+                                        <span>#1</span>
+                                    </div>
+                                    <img src="images/producto2.jpg" alt="producto2">
+                                    <div class="producto__info">
+                                        <h5>Producto 1</h5>
+                                        <span>$###</span>
+                                    </div>
                                 </div>
-                                <img src="images/producto2.jpg" alt="producto2">
-                                <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
-                                </div>
-                            </div>
-                            <div
-                                class="producto producto--destacado mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1">
-                                <div class="producto__numeroTop">
-                                    <span>#2</span>
-                                </div>
-                                <img src="images/producto2.jpg" alt="producto2">
-                                <div class="producto__info">
-                                    <h5>Producto 2</h5>
-                                    <span>$###</span>
-                                </div>
-                            </div>
-                            <div
-                                class="producto producto--destacado mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5">
-                                <div class="producto__numeroTop">
-                                    <span>#3</span>
-                                </div>
-                                <img src="images/producto2.jpg" alt="producto2">
-                                <div class="producto__info">
-                                    <h5>Producto 3</h5>
-                                    <span>$###</span>
-                                </div>
-                            </div>
-                            <div
-                                class="producto producto--destacado mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-0 col-sm-5 offset-sm-1 col-5 offset-1">
-                                <div class="producto__numeroTop">
-                                    <span>#4</span>
-                                </div>
-                                <img src="images/producto2.jpg" alt="producto2">
-                                <div class="producto__info">
-                                    <h5>Producto 4</h5>
-                                    <span>$###</span>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexDestacado1" tabindex="-1"
+                                aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexDestacado1Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 1
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div
-                                class="producto producto--destacado mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5">
-                                <div class="producto__numeroTop">
-                                    <span>#4</span>
+
+
+                            <!-- SEGUNDO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexDestacado2">
+                                <div class="producto producto--destacado">
+                                    <div class="producto__numeroTop">
+                                        <span>#2</span>
+                                    </div>
+                                    <img src="images/producto2.jpg" alt="producto2">
+                                    <div class="producto__info">
+                                        <h5>Producto 2</h5>
+                                        <span>$###</span>
+                                    </div>
                                 </div>
-                                <img src="images/producto2.jpg" alt="producto2">
-                                <div class="producto__info">
-                                    <h5>Producto 4</h5>
-                                    <span>$###</span>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexDestacado2" tabindex="-1"
+                                aria-labelledby="productoIndexDestacado2Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexDestacado2Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 2
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div
-                                class="producto producto--destacado d-lg-none mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5 offset-1">
-                                <div class="producto__numeroTop">
-                                    <span>#4</span>
+
+
+
+                            <!-- TERCER PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexDestacado3">
+                                <div class="producto producto--destacado">
+                                    <div class="producto__numeroTop">
+                                        <span>#3</span>
+                                    </div>
+                                    <img src="images/producto2.jpg" alt="producto2">
+                                    <div class="producto__info">
+                                        <h5>Producto 3</h5>
+                                        <span>$###</span>
+                                    </div>
                                 </div>
-                                <img src="images/producto2.jpg" alt="producto2">
-                                <div class="producto__info">
-                                    <h5>Producto 4</h5>
-                                    <span>$###</span>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexDestacado3" tabindex="-1"
+                                aria-labelledby="productoIndexDestacado3Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexDestacado3Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 3
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- CUARTO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto  mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-0 col-sm-5 offset-sm-1 col-5 offset-1"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexDestacado4">
+                                <div class="producto producto--destacado">
+                                    <div class="producto__numeroTop">
+                                        <span>#4</span>
+                                    </div>
+                                    <img src="images/producto2.jpg" alt="producto2">
+                                    <div class="producto__info">
+                                        <h5>Producto 4</h5>
+                                        <span>$###</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexDestacado4" tabindex="-1"
+                                aria-labelledby="productoIndexDestacado4Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexDestacado4Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 4
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- QUINTO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexDestacado5">
+                                <div class="producto producto--destacado">
+                                    <div class="producto__numeroTop">
+                                        <span>#4</span>
+                                    </div>
+                                    <img src="images/producto2.jpg" alt="producto2">
+                                    <div class="producto__info">
+                                        <h5>Producto 4</h5>
+                                        <span>$###</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexDestacado5" tabindex="-1"
+                                aria-labelledby="productoIndexDestacado5Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexDestacado5Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 5
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- SEXTO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto d-lg-none mt-3 col-md-3 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexDestacado6">
+                                <div class="producto producto--destacado">
+                                    <div class="producto__numeroTop">
+                                        <span>#4</span>
+                                    </div>
+                                    <img src="images/producto2.jpg" alt="producto2">
+                                    <div class="producto__info">
+                                        <h5>Producto 4</h5>
+                                        <span>$###</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexDestacado6" tabindex="-1"
+                                aria-labelledby="productoIndexDestacado6Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexDestacado6Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 6
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
-
 
                 <section class="indexMain__ofertas col-12 mt-4">
 
@@ -430,71 +749,230 @@
                     </div>
                     <div class="indexMain__ofertasProductos container-fluid p-0">
                         <div class="row m-0 justify-content-between">
-                            <div class="producto producto--oferta mt-3 col-lg-2 col-md-3 col-sm-5 col-5">
-                                <div class="producto__numeroTop">
-                                    <span>-15%</span>
+
+
+                            <!-- PRIMER PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 col-md-3 col-sm-5 col-5"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexOferta1">
+                                <div class="producto producto--oferta">
+                                    <div class="producto__numeroTop">
+                                        <span>-15%</span>
+                                    </div>
+                                    <img src="images/producto3.jpg" alt="producto3">
+                                    <div class="producto__info producto__info--oferta">
+                                        <h5>Producto 1</h5>
+                                        <span>$14.99<span class="ms-3 badge bg-success">$12.75</span> </span>
+                                    </div>
                                 </div>
-                                <img src="images/producto3.jpg" alt="producto3">
-                                <div class="producto__info producto__info--oferta">
-                                    <h5>Producto 1</h5>
-                                    <span>$14.99<span class="ms-3 badge bg-success">$12.75</span> </span>
-                                </div>
-                            </div>
-                            <div
-                                class="producto producto--oferta mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1">
-                                <div class="producto__numeroTop">
-                                    <span>-20%</span>
-                                </div>
-                                <img src="images/producto3.jpg" alt="producto3" class="pepito ">
-                                <div class="producto__info producto__info--oferta">
-                                    <h5>Producto 2</h5>
-                                    <span>$14.99<span class="ms-3 badge bg-success">$11.99</span> </span>
-                                </div>
-                            </div>
-                            <div
-                                class="producto producto--oferta mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5">
-                                <div class="producto__numeroTop">
-                                    <span>-10%</span>
-                                </div>
-                                <img src="images/producto3.jpg" alt="producto3">
-                                <div class="producto__info producto__info--oferta">
-                                    <h5>Producto 3</h5>
-                                    <span>$14.99<span class="ms-3 badge bg-success">$13.50</span> </span>
-                                </div>
-                            </div>
-                            <div
-                                class="producto producto--oferta mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-0 col-sm-5 offset-sm-1 col-5 offset-1">
-                                <div class="producto__numeroTop">
-                                    <span>-25%</span>
-                                </div>
-                                <img src="images/producto3.jpg" alt="producto3">
-                                <div class="producto__info producto__info--oferta">
-                                    <h5>Producto 4</h5>
-                                    <span>$14.99<span class="ms-3 badge bg-success">$11.25</span> </span>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexOferta1" tabindex="-1"
+                                aria-labelledby="productoIndexOferta1Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexOferta1Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 1
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div
-                                class="producto producto--oferta col-lg-2 mt-3 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5">
-                                <div class="producto__numeroTop">
-                                    <span>-25%</span>
+
+                            <!-- SEGUNDO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexOferta2">
+                                <div class="producto producto--oferta">
+                                    <div class="producto__numeroTop">
+                                        <span>-20%</span>
+                                    </div>
+                                    <img src="images/producto3.jpg" alt="producto3" class="pepito ">
+                                    <div class="producto__info producto__info--oferta">
+                                        <h5>Producto 2</h5>
+                                        <span>$14.99<span class="ms-3 badge bg-success">$11.99</span> </span>
+                                    </div>
                                 </div>
-                                <img src="images/producto3.jpg" alt="producto3">
-                                <div class="producto__info producto__info--oferta">
-                                    <h5>Producto 4</h5>
-                                    <span>$14.99<span class="ms-3 badge bg-success">$11.25</span> </span>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexOferta2" tabindex="-1"
+                                aria-labelledby="productoIndexOferta2Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexOferta2Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 2
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div
-                                class="producto producto--oferta d-lg-none mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5 offset-1">
-                                <div class="producto__numeroTop">
-                                    <span>-25%</span>
+
+                            <!-- TERCER PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexOferta3">
+                                <div class="producto producto--oferta">
+                                    <div class="producto__numeroTop">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="images/producto3.jpg" alt="producto3">
+                                    <div class="producto__info producto__info--oferta">
+                                        <h5>Producto 3</h5>
+                                        <span>$14.99<span class="ms-3 badge bg-success">$13.50</span> </span>
+                                    </div>
                                 </div>
-                                <img src="images/producto3.jpg" alt="producto3">
-                                <div class="producto__info producto__info--oferta">
-                                    <h5>Producto 4</h5>
-                                    <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexOferta3" tabindex="-1"
+                                aria-labelledby="productoIndexOferta3Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexOferta3Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 3
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- CUARTO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto  mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-0 col-sm-5 offset-sm-1 col-5 offset-1"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexOferta4">
+                                <div class="producto producto--oferta">
+                                    <div class="producto__numeroTop">
+                                        <span>-25%</span>
+                                    </div>
+                                    <img src="images/producto3.jpg" alt="producto3">
+                                    <div class="producto__info producto__info--oferta">
+                                        <h5>Producto 4</h5>
+                                        <span>$14.99<span class="ms-3 badge bg-success">$11.25</span> </span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexOferta4" tabindex="-1"
+                                aria-labelledby="productoIndexOferta4Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexOferta4Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 4
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUINTO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-sm-5 col-5"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexOferta5">
+                                <div class="producto producto--oferta">
+                                    <div class="producto__numeroTop">
+                                        <span>-25%</span>
+                                    </div>
+                                    <img src="images/producto3.jpg" alt="producto3">
+                                    <div class="producto__info producto__info--oferta">
+                                        <h5>Producto 4</h5>
+                                        <span>$14.99<span class="ms-3 badge bg-success">$11.25</span> </span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexOferta5" tabindex="-1"
+                                aria-labelledby="productoIndexOferta5Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexOferta5Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 5
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SEXTO PRODUCTO -->
+                            <button type="button"
+                                class="btn p-0 indexMain__modalProducto d-lg-none mt-3 col-md-3 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1"
+                                data-bs-toggle="modal" data-bs-target="#productoIndexOferta6">
+                                <div class="producto producto--oferta">
+                                    <div class="producto__numeroTop">
+                                        <span>-25%</span>
+                                    </div>
+                                    <img src="images/producto3.jpg" alt="producto3">
+                                    <div class="producto__info producto__info--oferta">
+                                        <h5>Producto 4</h5>
+                                        <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                                    </div>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="productoIndexOferta6" tabindex="-1"
+                                aria-labelledby="productoIndexOferta6Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productoIndexOferta6Label">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Producto index 6
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>

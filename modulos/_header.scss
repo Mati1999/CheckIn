@@ -122,91 +122,93 @@
     background-color: $colorTerciario;
 }
 
-.modal-dialog {
-    @include medidas(40%, 50%);
-    position: relative;
-    max-width: 100%;
-    margin: 15rem auto;
-    pointer-events: none;
+.header__modal {
+    .modal-dialog {
+        @include medidas(40%, 50%);
+        position: relative;
+        max-width: 100%;
+        margin: 15rem auto;
+        pointer-events: none;
 
-    @include tablet {
-        @include medidas(50%, 30%);
-        max-width: 50%;
-    }
+        @include tablet {
+            @include medidas(50%, 30%);
+            max-width: 50%;
+        }
 
-    @include mobile {
-        @include medidas(80%, 45%);
-    }
+        @include mobile {
+            @include medidas(80%, 45%);
+        }
 
-    @include miniMobile {
-        max-width: 80%;
-    }
+        @include miniMobile {
+            max-width: 80%;
+        }
 
-    .modal-content {
-        height: 100%;
-        background: $colorPrimario;
-
-        & form {
+        .modal-content {
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-
-        }
-
-        & form div {
-            width: 100%;
-            color: $colorTerciario;
-        }
-
-        & form h2 {
-            font-size: 1.5rem;
-            color: $colorTerciario;
-        }
-
-        & form div input {
             background: $colorPrimario;
-            border: $borderPrimario;
-            color: $colorTerciario;
-            border-radius: 0;
-            padding: 0 0 0 .2rem;
-            height: 2.5rem;
-            width: 100%;
-            border-bottom: $borderTerciario;
-            transition: $transicion;
 
-        }
+            & form {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
 
-        & form div input:hover,
-        & form div input:focus {
-            background: $colorTerciario;
-            color: $colorPrimario;
-            box-shadow: none;
-            border: $borderTerciario;
-            border-radius: .2rem;
+            }
 
-            &::placeholder {
+            & form div {
+                width: 100%;
+                color: $colorTerciario;
+            }
+
+            & form h2 {
+                font-size: 1.5rem;
+                color: $colorTerciario;
+            }
+
+            & form div input {
+                background: $colorPrimario;
+                border: $borderPrimario;
+                color: $colorTerciario;
+                border-radius: 0;
+                padding: 0 0 0 .2rem;
+                height: 2.5rem;
+                width: 100%;
+                border-bottom: $borderTerciario;
+                transition: $transicion;
+
+            }
+
+            & form div input:hover,
+            & form div input:focus {
+                background: $colorTerciario;
+                color: $colorPrimario;
+                box-shadow: none;
+                border: $borderTerciario;
+                border-radius: .2rem;
+
+                &::placeholder {
+                    color: $colorPrimario;
+                }
+            }
+
+            & form div input::placeholder {
+                color: $colorTerciario;
+            }
+
+            & form button {
+                color: $colorTerciario;
+                width: 50%;
+                border: $borderTerciario;
+                border-radius: 1rem;
+                transition: $transicion;
+            }
+
+            & form button:hover {
+                border: $borderTerciario;
+                background: $colorTerciario;
                 color: $colorPrimario;
             }
-        }
-
-        & form div input::placeholder {
-            color: $colorTerciario;
-        }
-
-        & form button {
-            color: $colorTerciario;
-            width: 50%;
-            border: $borderTerciario;
-            border-radius: 1rem;
-            transition: $transicion;
-        }
-
-        & form button:hover {
-            border: $borderTerciario;
-            background: $colorTerciario;
-            color: $colorPrimario;
         }
     }
 }

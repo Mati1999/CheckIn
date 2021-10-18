@@ -229,107 +229,339 @@
         <main class="ofertasMain">
             <section class="ofertasMain__contenedor container-fluid">
                 <div class="row justify-content-around">
-                    <div class="producto producto--oferta my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5">
-                        <div class="producto__numeroTop">
-                            <span>-15%</span>
+
+
+                    <!-- PRIMER PRODUCTO -->
+                    <button type="button"
+                        class="btn p-0 ofertasMain__modalProducto my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5"
+                        data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                        <div class="producto producto--oferta">
+                            <div class="producto__numeroTop">
+                                <span>-15%</span>
+                            </div>
+                            <img src="../images/producto3.jpg" alt="producto3">
+                            <div class="producto__info producto__info--oferta">
+                                <h5>Producto 1</h5>
+                                <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                            </div>
                         </div>
-                        <img src="../images/producto3.jpg" alt="producto3">
-                        <div class="producto__info producto__info--oferta">
-                            <h5>Producto 1</h5>
-                            <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
-                        </div>
-                    </div>
-                    <div class="producto producto--oferta  my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5">
-                        <div class="producto__numeroTop">
-                            <span>-10%</span>
-                        </div>
-                        <img src="../images/producto3.jpg" alt="producto3">
-                        <div class="producto__info producto__info--oferta">
-                            <h5>Producto 2</h5>
-                            <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
-                        </div>
-                    </div>
-                    <div class="producto producto--oferta my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5">
-                        <div class="producto__numeroTop">
-                            <span>-20%</span>
-                        </div>
-                        <img src="../images/producto3.jpg" alt="producto3">
-                        <div class="producto__info producto__info--oferta">
-                            <h5>Producto 3</h5>
-                            <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
-                        </div>
-                    </div>
-                    <div class="producto producto--oferta my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5">
-                        <div class="producto__numeroTop">
-                            <span>-15%</span>
-                        </div>
-                        <img src="../images/producto3.jpg" alt="producto3">
-                        <div class="producto__info producto__info--oferta">
-                            <h5>Producto 4</h5>
-                            <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                        aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="card tarjetaModal">
+                                    <img src="../images/producto3.jpg" class="card-img-top tarjetaModal__img" alt="...">
+                                    <div class="card-body tarjetaModal__info">
+                                        <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                        <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                            disfutar al aire libre, perfecto para el sol y con gran textura.
+                                        </p>
+                                        <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="producto producto--oferta my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5">
-                        <div class="producto__numeroTop">
-                            <span>-10%</span>
+                    <!-- SEGUNDO PRODUCTO -->
+                    <button type="button"
+                        class="btn p-0 loMasVendidoMain__modalProducto my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5"
+                        data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                        <div class="producto producto--oferta">
+                            <div class="producto__numeroTop">
+                                <span>-10%</span>
+                            </div>
+                            <img src="../images/producto3.jpg" alt="producto3">
+                            <div class="producto__info producto__info--oferta">
+                                <h5>Producto 2</h5>
+                                <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                            </div>
                         </div>
-                        <img src="../images/producto3.jpg" alt="producto3">
-                        <div class="producto__info producto__info--oferta">
-                            <h5>Producto 5</h5>
-                            <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
-                        </div>
-                    </div>
-                    <div class="producto producto--oferta my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5">
-                        <div class="producto__numeroTop">
-                            <span>-5%</span>
-                        </div>
-                        <img src="../images/producto3.jpg" alt="producto3">
-                        <div class="producto__info producto__info--oferta">
-                            <h5>Producto 6</h5>
-                            <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
-                        </div>
-                    </div>
-                    <div class="producto producto--oferta my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5">
-                        <div class="producto__numeroTop">
-                            <span>-10%</span>
-                        </div>
-                        <img src="../images/producto3.jpg" alt="producto3">
-                        <div class="producto__info producto__info--oferta">
-                            <h5>Producto 7</h5>
-                            <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
-                        </div>
-                    </div>
-                    <div class="producto producto--oferta my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5">
-                        <div class="producto__numeroTop">
-                            <span>-25%</span>
-                        </div>
-                        <img src="../images/producto3.jpg" alt="producto3">
-                        <div class="producto__info producto__info--oferta">
-                            <h5>Producto 8</h5>
-                            <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                        aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="card tarjetaModal">
+                                    <img src="../images/producto3.jpg" class="card-img-top tarjetaModal__img" alt="...">
+                                    <div class="card-body tarjetaModal__info">
+                                        <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                        <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                            disfutar al aire libre, perfecto para el sol y con gran textura.
+                                        </p>
+                                        <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="producto producto--oferta my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5">
-                        <div class="producto__numeroTop">
-                            <span>-25%</span>
+                    <!-- TERCER PRODUCTO -->
+                    <button type="button"
+                        class="btn p-0 loMasVendidoMain__modalProducto my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5"
+                        data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                        <div class="producto producto--oferta">
+                            <div class="producto__numeroTop">
+                                <span>-20%</span>
+                            </div>
+                            <img src="../images/producto3.jpg" alt="producto3">
+                            <div class="producto__info producto__info--oferta">
+                                <h5>Producto 3</h5>
+                                <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                            </div>
                         </div>
-                        <img src="../images/producto3.jpg" alt="producto3">
-                        <div class="producto__info producto__info--oferta">
-                            <h5>Producto 8</h5>
-                            <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                        aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="card tarjetaModal">
+                                    <img src="../images/producto3.jpg" class="card-img-top tarjetaModal__img" alt="...">
+                                    <div class="card-body tarjetaModal__info">
+                                        <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                        <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                            disfutar al aire libre, perfecto para el sol y con gran textura.
+                                        </p>
+                                        <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div
-                        class="producto producto--oferta my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5 d-lg-block d-md-none d-sm-block">
-                        <div class="producto__numeroTop">
-                            <span>-25%</span>
+                    <!-- CUARTO PRODUCTO -->
+                    <button type="button"
+                        class="btn p-0 loMasVendidoMain__modalProducto my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5"
+                        data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                        <div class="producto producto--oferta">
+                            <div class="producto__numeroTop">
+                                <span>-15%</span>
+                            </div>
+                            <img src="../images/producto3.jpg" alt="producto3">
+                            <div class="producto__info producto__info--oferta">
+                                <h5>Producto 4</h5>
+                                <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                            </div>
                         </div>
-                        <img src="../images/producto3.jpg" alt="producto3">
-                        <div class="producto__info producto__info--oferta">
-                            <h5>Producto 8</h5>
-                            <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                        aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="card tarjetaModal">
+                                    <img src="../images/producto3.jpg" class="card-img-top tarjetaModal__img" alt="...">
+                                    <div class="card-body tarjetaModal__info">
+                                        <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                        <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                            disfutar al aire libre, perfecto para el sol y con gran textura.
+                                        </p>
+                                        <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- QUINTO PRODUCTO -->
+                    <button type="button"
+                        class="btn p-0 loMasVendidoMain__modalProducto my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5"
+                        data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                        <div class="producto producto--oferta">
+                            <div class="producto__numeroTop">
+                                <span>-10%</span>
+                            </div>
+                            <img src="../images/producto3.jpg" alt="producto3">
+                            <div class="producto__info producto__info--oferta">
+                                <h5>Producto 5</h5>
+                                <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                            </div>
+                        </div>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                        aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="card tarjetaModal">
+                                    <img src="../images/producto3.jpg" class="card-img-top tarjetaModal__img" alt="...">
+                                    <div class="card-body tarjetaModal__info">
+                                        <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                        <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                            disfutar al aire libre, perfecto para el sol y con gran textura.
+                                        </p>
+                                        <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SEXTO PRODUCTO -->
+                    <button type="button"
+                        class="btn p-0 loMasVendidoMain__modalProducto my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5"
+                        data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                        <div class="producto producto--oferta">
+                            <div class="producto__numeroTop">
+                                <span>-5%</span>
+                            </div>
+                            <img src="../images/producto3.jpg" alt="producto3">
+                            <div class="producto__info producto__info--oferta">
+                                <h5>Producto 6</h5>
+                                <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                            </div>
+                        </div>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                        aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="card tarjetaModal">
+                                    <img src="../images/producto3.jpg" class="card-img-top tarjetaModal__img" alt="...">
+                                    <div class="card-body tarjetaModal__info">
+                                        <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                        <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                            disfutar al aire libre, perfecto para el sol y con gran textura.
+                                        </p>
+                                        <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SEPTIMO PRODUCTO -->
+                    <button type="button"
+                        class="btn p-0 loMasVendidoMain__modalProducto my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5"
+                        data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                        <div class="producto producto--oferta">
+                            <div class="producto__numeroTop">
+                                <span>-10%</span>
+                            </div>
+                            <img src="../images/producto3.jpg" alt="producto3">
+                            <div class="producto__info producto__info--oferta">
+                                <h5>Producto 7</h5>
+                                <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                            </div>
+                        </div>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                        aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="card tarjetaModal">
+                                    <img src="../images/producto3.jpg" class="card-img-top tarjetaModal__img" alt="...">
+                                    <div class="card-body tarjetaModal__info">
+                                        <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                        <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                            disfutar al aire libre, perfecto para el sol y con gran textura.
+                                        </p>
+                                        <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- OCTAVO PRODUCTO -->
+                    <button type="button"
+                        class="btn p-0 loMasVendidoMain__modalProducto my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5"
+                        data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                        <div class="producto producto--oferta">
+                            <div class="producto__numeroTop">
+                                <span>-25%</span>
+                            </div>
+                            <img src="../images/producto3.jpg" alt="producto3">
+                            <div class="producto__info producto__info--oferta">
+                                <h5>Producto 8</h5>
+                                <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                            </div>
+                        </div>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                        aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="card tarjetaModal">
+                                    <img src="../images/producto3.jpg" class="card-img-top tarjetaModal__img" alt="...">
+                                    <div class="card-body tarjetaModal__info">
+                                        <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                        <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                            disfutar al aire libre, perfecto para el sol y con gran textura.
+                                        </p>
+                                        <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- NOVENO PRODUCTO -->
+                    <button type="button"
+                        class="btn p-0 loMasVendidoMain__modalProducto my-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5"
+                        data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                        <div class="producto producto--oferta">
+                            <div class="producto__numeroTop">
+                                <span>-25%</span>
+                            </div>
+                            <img src="../images/producto3.jpg" alt="producto3">
+                            <div class="producto__info producto__info--oferta">
+                                <h5>Producto 8</h5>
+                                <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                            </div>
+                        </div>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                        aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="card tarjetaModal">
+                                    <img src="../images/producto3.jpg" class="card-img-top tarjetaModal__img" alt="...">
+                                    <div class="card-body tarjetaModal__info">
+                                        <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                        <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                            disfutar al aire libre, perfecto para el sol y con gran textura.
+                                        </p>
+                                        <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DECIMO PRODUCTO -->
+                    <button type="button"
+                        class="btn p-0 loMasVendidoMain__modalProductomy-3 mx-1 col-lg-2 col-md-3 col-sm-5 col-5 d-lg-block d-md-none d-sm-block"
+                        data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                        <div class="producto producto--oferta">
+                            <div class="producto__numeroTop">
+                                <span>-25%</span>
+                            </div>
+                            <img src="../images/producto3.jpg" alt="producto3">
+                            <div class="producto__info producto__info--oferta">
+                                <h5>Producto 8</h5>
+                                <span>$14.99<span class="ms-3 badge bg-success">$9.99</span> </span>
+                            </div>
+                        </div>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                        aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="card tarjetaModal">
+                                    <img src="../images/producto3.jpg" class="card-img-top tarjetaModal__img" alt="...">
+                                    <div class="card-body tarjetaModal__info">
+                                        <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                        <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                            disfutar al aire libre, perfecto para el sol y con gran textura.
+                                        </p>
+                                        <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 

@@ -6,9 +6,53 @@
     background: linear-gradient(to bottom, $colorSecundario, $colorTerciario);
 }
 
+.filtroResponsive__button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    border: $borderTerciario;
+    background: $colorSecundario;
+    width: 15%;
+    margin: .5rem 0 0 auto;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    @include mobile {
+        width: 25%;
+    }
+
+    @include miniMobile {
+        width: 50%;
+    }
+}
+
+.filtroResponsive__container {
+    background: $colorTerciario;
+
+    .offcanvas-header h5 {
+        font-size: 2rem;
+    }
+
+}
+
 .filtro {
     height: 100%;
     padding: 0 1rem 0 0;
+
+    @include tablet {
+        padding: 0 4rem 0 0;
+    }
+
+    @include mobile {
+        padding: 0 3rem 0 0;
+    }
+
+    @include miniMobile {
+        padding: 0 2rem 0 0;
+    }
 }
 
 .filtro__categorias,
@@ -16,6 +60,10 @@
 .filtro__loMasVendido {
     background: $colorTerciario;
     padding: 1rem;
+
+    @include tablet {
+        background: transparent;
+    }
 }
 
 .filtro__categorias {
@@ -31,7 +79,7 @@
 
     label {
         font-size: 1.2rem;
-        width: 60%;
+        width: 70%;
         height: 2.5rem;
         background: $colorSecundario;
         border-radius: 1.5rem;
@@ -86,10 +134,18 @@
 
     &__info {
         @include medidas(50%, 100%);
+
+        @include miniMobile {
+            font-size: 1rem;
+        }
     }
 }
 
 .indumentariaMain__productos {
     height: 100%;
-    margin: 3rem 0 0 0;
+
+    .row {
+        height: 100%;
+        padding-bottom: 1rem;
+    }
 }

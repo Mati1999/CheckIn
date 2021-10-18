@@ -130,7 +130,7 @@ html {
   background-color: #DDDDDA;
 }
 
-.modal-dialog {
+.header__modal .modal-dialog {
   width: 40%;
   height: 50%;
   position: relative;
@@ -139,43 +139,43 @@ html {
   pointer-events: none;
 }
 @media only screen and (max-width: 991px) {
-  .modal-dialog {
+  .header__modal .modal-dialog {
     width: 50%;
     height: 30%;
     max-width: 50%;
   }
 }
 @media only screen and (max-width: 767px) {
-  .modal-dialog {
+  .header__modal .modal-dialog {
     width: 80%;
     height: 45%;
   }
 }
 @media only screen and (max-width: 575px) {
-  .modal-dialog {
+  .header__modal .modal-dialog {
     max-width: 80%;
   }
 }
-.modal-dialog .modal-content {
+.header__modal .modal-dialog .modal-content {
   height: 100%;
   background: #4a707a;
 }
-.modal-dialog .modal-content form {
+.header__modal .modal-dialog .modal-content form {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
-.modal-dialog .modal-content form div {
+.header__modal .modal-dialog .modal-content form div {
   width: 100%;
   color: #DDDDDA;
 }
-.modal-dialog .modal-content form h2 {
+.header__modal .modal-dialog .modal-content form h2 {
   font-size: 1.5rem;
   color: #DDDDDA;
 }
-.modal-dialog .modal-content form div input {
+.header__modal .modal-dialog .modal-content form div input {
   background: #4a707a;
   border: 1px solid #4a707a;
   color: #DDDDDA;
@@ -186,27 +186,27 @@ html {
   border-bottom: 1px solid #DDDDDA;
   transition: all 0.3s ease;
 }
-.modal-dialog .modal-content form div input:hover, .modal-dialog .modal-content form div input:focus {
+.header__modal .modal-dialog .modal-content form div input:hover, .header__modal .modal-dialog .modal-content form div input:focus {
   background: #DDDDDA;
   color: #4a707a;
   box-shadow: none;
   border: 1px solid #DDDDDA;
   border-radius: 0.2rem;
 }
-.modal-dialog .modal-content form div input:hover::placeholder, .modal-dialog .modal-content form div input:focus::placeholder {
+.header__modal .modal-dialog .modal-content form div input:hover::placeholder, .header__modal .modal-dialog .modal-content form div input:focus::placeholder {
   color: #4a707a;
 }
-.modal-dialog .modal-content form div input::placeholder {
+.header__modal .modal-dialog .modal-content form div input::placeholder {
   color: #DDDDDA;
 }
-.modal-dialog .modal-content form button {
+.header__modal .modal-dialog .modal-content form button {
   color: #DDDDDA;
   width: 50%;
   border: 1px solid #DDDDDA;
   border-radius: 1rem;
   transition: all 0.3s ease;
 }
-.modal-dialog .modal-content form button:hover {
+.header__modal .modal-dialog .modal-content form button:hover {
   border: 1px solid #DDDDDA;
   background: #DDDDDA;
   color: #4a707a;
@@ -795,6 +795,76 @@ html {
   position: relative;
 }
 
+.modalProducto .modal-dialog {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+@media only screen and (max-width: 991px) {
+  .modalProducto .modal-dialog {
+    margin-top: 20%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .modalProducto .modal-dialog {
+    margin-top: 20%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .modalProducto .modal-dialog {
+    margin-top: 10%;
+  }
+}
+.modalProducto .modal-content {
+  width: 100%;
+}
+@media only screen and (max-width: 575px) {
+  .modalProducto .modal-content {
+    width: 75%;
+  }
+}
+.modalProducto .modal-body {
+  width: 100%;
+}
+
+.tarjetaModal {
+  flex-direction: row;
+  width: 100%;
+}
+@media only screen and (max-width: 575px) {
+  .tarjetaModal {
+    flex-direction: column;
+  }
+}
+.tarjetaModal__img {
+  width: 50%;
+}
+@media only screen and (max-width: 575px) {
+  .tarjetaModal__img {
+    width: 100%;
+  }
+}
+.tarjetaModal__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tarjetaModal__nombre {
+  font-size: 2rem;
+}
+.tarjetaModal__description {
+  font-size: 1.2rem;
+}
+.tarjetaModal__boton {
+  background: #4a707a;
+  color: #DDDDDA;
+  transition: all 0.3s ease;
+}
+.tarjetaModal__boton:hover {
+  background: #94B0B7;
+  color: #DDDDDA;
+}
+
 .producto__numeroTop {
   width: 3rem;
   height: 2rem;
@@ -936,9 +1006,55 @@ html {
   background: linear-gradient(to bottom, #94B0B7, #DDDDDA);
 }
 
+.filtroResponsive__button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  border: 1px solid #DDDDDA;
+  background: #94B0B7;
+  width: 15%;
+  margin: 0.5rem 0 0 auto;
+}
+.filtroResponsive__button:focus {
+  box-shadow: none;
+}
+@media only screen and (max-width: 767px) {
+  .filtroResponsive__button {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .filtroResponsive__button {
+    width: 50%;
+  }
+}
+
+.filtroResponsive__container {
+  background: #DDDDDA;
+}
+.filtroResponsive__container .offcanvas-header h5 {
+  font-size: 2rem;
+}
+
 .filtro {
   height: 100%;
   padding: 0 1rem 0 0;
+}
+@media only screen and (max-width: 991px) {
+  .filtro {
+    padding: 0 4rem 0 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .filtro {
+    padding: 0 3rem 0 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .filtro {
+    padding: 0 2rem 0 0;
+  }
 }
 
 .filtro__categorias,
@@ -946,6 +1062,13 @@ html {
 .filtro__loMasVendido {
   background: #DDDDDA;
   padding: 1rem;
+}
+@media only screen and (max-width: 991px) {
+  .filtro__categorias,
+.filtro__precios,
+.filtro__loMasVendido {
+    background: transparent;
+  }
 }
 
 .filtro__categorias div, .filtro__precios div {
@@ -958,7 +1081,7 @@ html {
 }
 .filtro__categorias label, .filtro__precios label {
   font-size: 1.2rem;
-  width: 60%;
+  width: 70%;
   height: 2.5rem;
   background: #94B0B7;
   border-radius: 1.5rem;
@@ -1009,10 +1132,18 @@ html {
   width: 50%;
   height: 100%;
 }
+@media only screen and (max-width: 575px) {
+  .miniProducto__info {
+    font-size: 1rem;
+  }
+}
 
 .indumentariaMain__productos {
   height: 100%;
-  margin: 3rem 0 0 0;
+}
+.indumentariaMain__productos .row {
+  height: 100%;
+  padding-bottom: 1rem;
 }
 
 html {
@@ -1029,6 +1160,10 @@ html {
   .loMasVendidoMain {
     padding: 2rem 1rem;
   }
+}
+
+.loMasVendidoMain__modalProducto:focus {
+  box-shadow: none;
 }
 
 html {
@@ -1167,6 +1302,10 @@ html {
   .ofertasMain {
     padding: 2rem 1rem;
   }
+}
+
+.ofertasMain__modalProducto:focus {
+  box-shadow: none;
 }
 
 html {

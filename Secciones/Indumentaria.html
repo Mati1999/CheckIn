@@ -226,9 +226,115 @@
 
 
         <main class="indumentariaMain container-fluid overflow-hidden">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="filtro col-lg-3 col-12">
-                    <div class="filtro__categorias">
+                    <div class="filtroResponsive d-block d-lg-none">
+                        <button class="btn filtroResponsive__button" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <ion-icon name="filter-outline"></ion-icon>
+                            Filtros
+                        </button>
+
+                        <div class="offcanvas offcanvas-end filtroResponsive__container" tabindex="-1"
+                            id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Filtros</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="filtro__categorias">
+                                    <h3 class="filtro__h3categoria">Categoría</h3>
+                                    <div class="filtro__hombre">
+                                        <label><input type="radio" name="categoria" id="" value="hombre">Hombre</label>
+                                    </div>
+                                    <div class="filtro__mujer">
+                                        <label><input type="radio" name="categoria" id="" value="mujer">Mujer</label>
+                                    </div>
+                                    <div class="filtro__zapatillas">
+                                        <label><input type="radio" name="categoria" id=""
+                                                value="zapatillas">Zapatillas</label>
+                                    </div>
+                                    <div class="filtro__remeras">
+                                        <label><input type="radio" name="categoria" id=""
+                                                value="remeras">Remeras</label>
+                                    </div>
+                                    <div class="filtro__pantalon">
+                                        <label><input type="radio" name="categoria" id=""
+                                                value="pantalones">Pantalones</label>
+                                    </div>
+                                    <div class="filtro__accesorios">
+                                        <label><input type="radio" name="categoria" id=""
+                                                value="accesorios">Accesorios</label>
+                                    </div>
+                                </div>
+                                <div class="filtro__precios">
+                                    <h3 class="filtro__h3precio">Precio</h3>
+                                    <div class="filtro__precioMin">
+                                        <label><input type="radio" name="precio" id="">$0 - $50</label>
+                                    </div>
+                                    <div class="filtro__precioMid">
+                                        <label><input type="radio" name="precio" id="">$50 - $150</label>
+                                    </div>
+                                    <div class="filtro__precioMax">
+                                        <label><input type="radio" name="precio" id="">$150 - $300</label>
+                                    </div>
+                                </div>
+                                <div class="filtro__loMasVendido">
+                                    <h3 class="filtro__h3LoMasVendido">
+                                        Los mas vendidos
+                                    </h3>
+                                    <div class="filtro__productos">
+                                        <div class="miniProducto">
+                                            <a class="miniProducto__aSelector" href="">
+                                                <div class="miniProducto__imcContainer">
+                                                    <img class="miniProducto__img" src="../images/mochila.jpg" alt="">
+                                                </div>
+                                                <div class="miniProducto__info">
+                                                    <h5 class="miniProducto__nombre">Producto 1</h5>
+                                                    <span class="miniProducto__precio">$29.99</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="miniProducto">
+                                            <a class="miniProducto__aSelector" href="">
+                                                <div class="miniProducto__imcContainer">
+                                                    <img class="miniProducto__img" src="../images/mochila.jpg" alt="">
+                                                </div>
+                                                <div class="miniProducto__info">
+                                                    <h5 class="miniProducto__nombre">Producto 1</h5>
+                                                    <span class="miniProducto__precio">$29.99</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="miniProducto">
+                                            <a class="miniProducto__aSelector" href="">
+                                                <div class="miniProducto__imcContainer">
+                                                    <img class="miniProducto__img" src="../images/mochila.jpg" alt="">
+                                                </div>
+                                                <div class="miniProducto__info">
+                                                    <h5 class="miniProducto__nombre">Producto 1</h5>
+                                                    <span class="miniProducto__precio">$29.99</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="miniProducto">
+                                            <a class="miniProducto__aSelector" href="">
+                                                <div class="miniProducto__imcContainer">
+                                                    <img class="miniProducto__img" src="../images/mochila.jpg" alt="">
+                                                </div>
+                                                <div class="miniProducto__info">
+                                                    <h5 class="miniProducto__nombre">Producto 1</h5>
+                                                    <span class="miniProducto__precio">$29.99</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filtro__categorias d-none d-lg-block">
                         <h3 class="filtro__h3categoria">Categoría</h3>
                         <div class="filtro__hombre">
                             <label><input type="radio" name="categoria" id="" value="hombre">Hombre</label>
@@ -249,7 +355,7 @@
                             <label><input type="radio" name="categoria" id="" value="accesorios">Accesorios</label>
                         </div>
                     </div>
-                    <div class="filtro__precios">
+                    <div class="filtro__precios d-none d-lg-block">
                         <h3 class="filtro__h3precio">Precio</h3>
                         <div class="filtro__precioMin">
                             <label><input type="radio" name="precio" id="">$0 - $50</label>
@@ -261,7 +367,7 @@
                             <label><input type="radio" name="precio" id="">$150 - $300</label>
                         </div>
                     </div>
-                    <div class="filtro__loMasVendido">
+                    <div class="filtro__loMasVendido d-none d-lg-block">
                         <h3 class="filtro__h3LoMasVendido">
                             Los mas vendidos
                         </h3>
@@ -316,70 +422,380 @@
 
                 <div class="indumentariaMain__productos container-fluid col-lg-9 col-12">
                     <div class="row justify-content-evenly overflow-hidden">
-                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
-                            <img src="../images/producto1.jpg" alt="producto1">
-                            <div class="producto__info">
-                                <h5>Producto 1</h5>
-                                <span>$###</span>
+                        <!-- PRIMER PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndex1">
+                            <div class="producto ">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndex1" tabindex="-1"
+                            aria-labelledby="productoIndex1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
-                            <img src="../images/producto1.jpg" alt="producto1">
-                            <div class="producto__info">
-                                <h5>Producto 1</h5>
-                                <span>$###</span>
+
+                        <!-- SEGUNDO PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                            <div class="producto ">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                            aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
-                            <img src="../images/producto1.jpg" alt="producto1">
-                            <div class="producto__info">
-                                <h5>Producto 1</h5>
-                                <span>$###</span>
+                        <!-- TERCER PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                            <div class="producto ">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                            aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
-                            <img src="../images/producto1.jpg" alt="producto1">
-                            <div class="producto__info">
-                                <h5>Producto 1</h5>
-                                <span>$###</span>
+                        <!-- CUARTO PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                            <div class="producto ">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                            aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
-                            <img src="../images/producto1.jpg" alt="producto1">
-                            <div class="producto__info">
-                                <h5>Producto 1</h5>
-                                <span>$###</span>
+                        <!-- QUINTO PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                            <div class="producto ">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                            aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
-                            <img src="../images/producto1.jpg" alt="producto1">
-                            <div class="producto__info">
-                                <h5>Producto 1</h5>
-                                <span>$###</span>
+                        <!-- SEXTO PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                            <div class="producto ">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                            aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
-                            <img src="../images/producto1.jpg" alt="producto1">
-                            <div class="producto__info">
-                                <h5>Producto 1</h5>
-                                <span>$###</span>
+                        <!-- SEPTIMO PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                            <div class="producto ">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                            aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5">
-                            <img src="../images/producto1.jpg" alt="producto1">
-                            <div class="producto__info">
-                                <h5>Producto 1</h5>
-                                <span>$###</span>
+                        <!-- OCTAVO PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                            <div class="producto">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                            aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div
-                            class="producto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5 d-lg-none d-md-block d-none">
-                            <img src="../images/producto1.jpg" alt="producto1">
-                            <div class="producto__info">
-                                <h5>Producto 1</h5>
-                                <span>$###</span>
+                        <!-- NOVENO PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                            <div class="producto ">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                            aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- DECIMO PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                            <div class="producto ">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                            aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DECIMO PRIMER PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                            <div class="producto ">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                            aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DECIMO SEGUNDO PRODUCTO -->
+                        <button type="button"
+                            class="btn p-0 indexMain__modalProducto mt-3 col-lg-2 mx-lg-4 col-md-3 ms-md-3 col-sm-5 col-5"
+                            data-bs-toggle="modal" data-bs-target="#productoIndexDestacado1">
+                            <div class="producto ">
+                                <img src="../images/producto1.jpg" alt="producto1">
+                                <div class="producto__info">
+                                    <h5>Producto 1</h5>
+                                    <span>$###</span>
+                                </div>
+                            </div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade modalProducto" id="productoIndexDestacado1" tabindex="-1"
+                            aria-labelledby="productoIndexDestacado1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="card tarjetaModal">
+                                        <img src="../images/producto1.jpg" class="card-img-top tarjetaModal__img"
+                                            alt="...">
+                                        <div class="card-body tarjetaModal__info">
+                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <p class="card-text tarjetaModal__description">Sombrero cómodo para
+                                                disfutar al aire libre, perfecto para el sol y con gran textura.
+                                            </p>
+                                            <a href="#" class="btn tarjetaModal__boton">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

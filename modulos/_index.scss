@@ -168,6 +168,83 @@
     }
 }
 
+.modalProducto {
+
+
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+
+        @include tablet {
+            margin-top: 20%;
+        }
+
+        @include mobile {
+            margin-top: 20%;
+        }
+
+        @include miniMobile {
+            margin-top: 10%;
+        }
+    }
+
+    .modal-content {
+        width: 100%;
+
+        @include miniMobile {
+            width: 75%;
+        }
+    }
+
+    .modal-body {
+        width: 100%;
+    }
+
+}
+
+.tarjetaModal {
+    flex-direction: row;
+    width: 100%;
+
+    @include miniMobile {
+        flex-direction: column;
+    }
+
+    &__img {
+        width: 50%;
+
+        @include miniMobile {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__nombre {
+        font-size: 2rem;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+    }
+
+    &__boton {
+        background: $colorPrimario;
+        color: $colorTerciario;
+        transition: $transicion;
+    }
+
+    &__boton:hover {
+        background: $colorSecundario;
+        color: $colorTerciario;
+    }
+}
+
 
 .producto__numeroTop {
     @include medidas(3rem, 2rem);

@@ -107,6 +107,7 @@
 
 
     &__aSelector {
+        height: 7rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -115,6 +116,7 @@
         background: $colorSecundario;
         transition: $transicion;
         border-radius: .3rem;
+        overflow: hidden;
     }
 
     &__aSelector:hover {

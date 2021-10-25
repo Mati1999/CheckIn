@@ -37,7 +37,7 @@
                     <div class="header__inicioSesion">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn p-0 header__botonModal" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                            data-bs-target="#inicioSesionModal">
                             <div class="header__botonSesion d-none d-lg-flex">
                                 <ion-icon name="person-outline"></ion-icon>
                                 <input type="button" value="Inicia Sesión">
@@ -45,9 +45,9 @@
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
+                        <div class="modal fade header__modal" id="inicioSesionModal" tabindex="-1"
+                            aria-labelledby="inicioSesionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog header__modal">
                                 <div class="modal-content p-3">
 
                                     <form>
@@ -69,8 +69,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                     <div class="header__carrito" id="carrito">
                         <a data-bs-toggle="offcanvas" href="#carritoDesplegable" role="button"
@@ -203,9 +201,9 @@
                                     <ul class="pt-0 pb-0 m-0 dropdown-menu d-lg-none"
                                         aria-labelledby=" navbarDropdown-1">
                                         <li><a href="Indumentaria.html">Indumentaria</a></li>
-                                        <li><a href="#">Equipaje</a></li>
-                                        <li><a href="#">Comodidad</a></li>
-                                        <li><a href="#">Tecnología</a></li>
+                                        <li><a href="equipaje.html">Equipaje</a></li>
+                                        <li><a href="comodidad.html">Comodidad</a></li>
+                                        <li><a href="tecnologia.html">Tecnología</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -253,9 +251,6 @@
                     <div class="footer__menus col-lg-2 col-md-3 col-sm-6 col-12">
                         <a href="../index.html">
                             <h5>Inicio</h5>
-                        </a></h5>
-                        <a href="Categorias.html">
-                            <h5>Categorias</h5>
                         </a>
                         <a href="Novedades.html">
                             <h5>Novedades</h5>

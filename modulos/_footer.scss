@@ -121,6 +121,7 @@
     transition: $transicion;
 
     &::placeholder {
+        text-align: center;
         color: $colorTerciario;
     }
 

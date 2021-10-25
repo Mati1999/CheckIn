@@ -33,7 +33,7 @@
                     <div class="header__inicioSesion">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn p-0 header__botonModal" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                            data-bs-target="#inicioSesionModal">
                             <div class="header__botonSesion d-none d-lg-flex">
                                 <ion-icon name="person-outline"></ion-icon>
                                 <input type="button" value="Inicia Sesión">
@@ -41,9 +41,9 @@
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
+                        <div class="modal fade header__modal" id="inicioSesionModal" tabindex="-1"
+                            aria-labelledby="inicioSesionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog header__modal">
                                 <div class="modal-content p-3">
 
                                     <form>
@@ -245,27 +245,26 @@
                             <div class="offcanvas-body">
                                 <div class="filtro__categorias">
                                     <h3 class="filtro__h3categoria">Categoría</h3>
-                                    <div class="filtro__hombre">
-                                        <label><input type="radio" name="categoria" id="" value="hombre">Hombre</label>
-                                    </div>
-                                    <div class="filtro__mujer">
-                                        <label><input type="radio" name="categoria" id="" value="mujer">Mujer</label>
-                                    </div>
-                                    <div class="filtro__zapatillas">
+                                    <div class="filtro__almohadaParaElCuello">
                                         <label><input type="radio" name="categoria" id=""
-                                                value="zapatillas">Zapatillas</label>
+                                                value="almohadaParaElCuello">Almohada para el cuello</label>
                                     </div>
-                                    <div class="filtro__remeras">
-                                        <label><input type="radio" name="categoria" id=""
-                                                value="remeras">Remeras</label>
+                                    <div class="filtro__toallaAbsorcion">
+                                        <label><input type="radio" name="categoria" id="" value="toallaAbsorcion">Toalla
+                                            de alta absorción</label>
                                     </div>
-                                    <div class="filtro__pantalon">
+                                    <div class="filtro__pantuflas">
                                         <label><input type="radio" name="categoria" id=""
-                                                value="pantalones">Pantalones</label>
+                                                value="pantuflas">Pantuflas</label>
                                     </div>
-                                    <div class="filtro__accesorios">
+                                    <div class="filtro__antifazParaDormir">
                                         <label><input type="radio" name="categoria" id=""
-                                                value="accesorios">Accesorios</label>
+                                                value="antifazParaDormir">Antifaz
+                                            para dormir</label>
+                                    </div>
+                                    <div class="filtro__portaAccesorios">
+                                        <label><input type="radio" name="categoria" id="" value="portaAccesorios">Porta
+                                            accesorios</label>
                                     </div>
                                 </div>
                                 <div class="filtro__precios">
@@ -286,7 +285,8 @@
                                     </h3>
                                     <div class="filtro__productos">
                                         <div class="miniProducto">
-                                            <button type="button" class="btn p-0 indexMain__modalProducto"
+                                            <button type="button"
+                                                class="btn p-0 indexMain__modalProducto miniProducto__button"
                                                 data-bs-toggle="modal" data-bs-target="#productoComodidad2">
                                                 <div class="miniProducto__aSelector" href="">
                                                     <div class="miniProducto__imcContainer">
@@ -294,14 +294,15 @@
                                                             src="../images/comodidad/comodidad2.jpg" alt="">
                                                     </div>
                                                     <div class="miniProducto__info">
-                                                        <h5 class="miniProducto__nombre">Producto 1</h5>
-                                                        <span class="miniProducto__precio">$29.99</span>
+                                                        <h5 class="miniProducto__nombre">Porta accesorios</h5>
+                                                        <span class="miniProducto__precio">$70</span>
                                                     </div>
                                                 </div>
                                             </button>
                                         </div>
                                         <div class="miniProducto">
-                                            <button type="button" class="btn p-0 indexMain__modalProducto"
+                                            <button type="button"
+                                                class="btn p-0 indexMain__modalProducto miniProducto__button"
                                                 data-bs-toggle="modal" data-bs-target="#productoComodidad7">
                                                 <div class="miniProducto__aSelector" href="">
                                                     <div class="miniProducto__imcContainer">
@@ -309,14 +310,15 @@
                                                             src="../images/comodidad/comodidad7.jpg" alt="">
                                                     </div>
                                                     <div class="miniProducto__info">
-                                                        <h5 class="miniProducto__nombre">Producto 1</h5>
-                                                        <span class="miniProducto__precio">$29.99</span>
+                                                        <h5 class="miniProducto__nombre">Porta accesorios</h5>
+                                                        <span class="miniProducto__precio">$15</span>
                                                     </div>
                                                 </div>
                                             </button>
                                         </div>
                                         <div class="miniProducto">
-                                            <button type="button" class="btn p-0 indexMain__modalProducto"
+                                            <button type="button"
+                                                class="btn p-0 indexMain__modalProducto miniProducto__button"
                                                 data-bs-toggle="modal" data-bs-target="#productoComodidad8">
                                                 <div class="miniProducto__aSelector" href="">
                                                     <div class="miniProducto__imcContainer">
@@ -324,14 +326,15 @@
                                                             src="../images/comodidad/comodidad8.jpg" alt="">
                                                     </div>
                                                     <div class="miniProducto__info">
-                                                        <h5 class="miniProducto__nombre">Producto 1</h5>
-                                                        <span class="miniProducto__precio">$29.99</span>
+                                                        <h5 class="miniProducto__nombre">Almohada para cuello</h5>
+                                                        <span class="miniProducto__precio">$20</span>
                                                     </div>
                                                 </div>
                                             </button>
                                         </div>
                                         <div class="miniProducto">
-                                            <button type="button" class="btn p-0 indexMain__modalProducto"
+                                            <button type="button"
+                                                class="btn p-0 indexMain__modalProducto miniProducto__button"
                                                 data-bs-toggle="modal" data-bs-target="#productoComodidad11">
                                                 <div class="miniProducto__aSelector" href="">
                                                     <div class="miniProducto__imcContainer">
@@ -339,8 +342,8 @@
                                                             src="../images/comodidad/comodidad11.jpg" alt="">
                                                     </div>
                                                     <div class="miniProducto__info">
-                                                        <h5 class="miniProducto__nombre">Producto 1</h5>
-                                                        <span class="miniProducto__precio">$29.99</span>
+                                                        <h5 class="miniProducto__nombre">Pantuflas</h5>
+                                                        <span class="miniProducto__precio">$5</span>
                                                     </div>
                                                 </div>
                                             </button>
@@ -352,23 +355,24 @@
                     </div>
                     <div class="filtro__categorias d-none d-lg-block">
                         <h3 class="filtro__h3categoria">Categoría</h3>
-                        <div class="filtro__hombre">
-                            <label><input type="radio" name="categoria" id="" value="hombre">Hombre</label>
+                        <div class="filtro__almohadaParaElCuello">
+                            <label><input type="radio" name="categoria" id="" value="almohadaParaElCuello">Almohada para
+                                el cuello</label>
                         </div>
-                        <div class="filtro__mujer">
-                            <label><input type="radio" name="categoria" id="" value="mujer">Mujer</label>
+                        <div class="filtro__toallaAbsorcion">
+                            <label><input type="radio" name="categoria" id="" value="toallaAbsorcion">Toalla de alta
+                                absorción</label>
                         </div>
-                        <div class="filtro__zapatillas">
-                            <label><input type="radio" name="categoria" id="" value="zapatillas">Zapatillas</label>
+                        <div class="filtro__pantuflas">
+                            <label><input type="radio" name="categoria" id="" value="pantuflas">Pantuflas</label>
                         </div>
-                        <div class="filtro__remeras">
-                            <label><input type="radio" name="categoria" id="" value="remeras">Remeras</label>
+                        <div class="filtro__antifazParaDormir">
+                            <label><input type="radio" name="categoria" id="" value="antifazParaDormir">Antifaz para
+                                dormir</label>
                         </div>
-                        <div class="filtro__pantalon">
-                            <label><input type="radio" name="categoria" id="" value="pantalones">Pantalones</label>
-                        </div>
-                        <div class="filtro__accesorios">
-                            <label><input type="radio" name="categoria" id="" value="accesorios">Accesorios</label>
+                        <div class="filtro__portaAccesorios">
+                            <label><input type="radio" name="categoria" id="" value="portaAccesorios">Porta
+                                accesorios</label>
                         </div>
                     </div>
                     <div class="filtro__precios d-none d-lg-block">
@@ -389,61 +393,61 @@
                         </h3>
                         <div class="filtro__productos">
                             <div class="miniProducto">
-                                <button type="button" class="btn p-0 indexMain__modalProducto" data-bs-toggle="modal"
-                                    data-bs-target="#productoComodidad2">
+                                <button type="button" class="btn p-0 indexMain__modalProducto miniProducto__button"
+                                    data-bs-toggle="modal" data-bs-target="#productoComodidad2">
                                     <div class="miniProducto__aSelector" href="">
                                         <div class="miniProducto__imcContainer">
                                             <img class="miniProducto__img" src="../images/comodidad/comodidad2.jpg"
                                                 alt="">
                                         </div>
                                         <div class="miniProducto__info">
-                                            <h5 class="miniProducto__nombre">Producto 1</h5>
-                                            <span class="miniProducto__precio">$29.99</span>
+                                            <h5 class="miniProducto__nombre">Porta accesorios</h5>
+                                            <span class="miniProducto__precio">$70</span>
                                         </div>
                                     </div>
                                 </button>
                             </div>
                             <div class="miniProducto">
-                                <button type="button" class="btn p-0 indexMain__modalProducto" data-bs-toggle="modal"
-                                    data-bs-target="#productoComodidad7">
+                                <button type="button" class="btn p-0 indexMain__modalProducto miniProducto__button"
+                                    data-bs-toggle="modal" data-bs-target="#productoComodidad7">
                                     <div class="miniProducto__aSelector" href="">
                                         <div class="miniProducto__imcContainer">
                                             <img class="miniProducto__img" src="../images/comodidad/comodidad7.jpg"
                                                 alt="">
                                         </div>
                                         <div class="miniProducto__info">
-                                            <h5 class="miniProducto__nombre">Producto 1</h5>
-                                            <span class="miniProducto__precio">$29.99</span>
+                                            <h5 class="miniProducto__nombre">Porta accesorios</h5>
+                                            <span class="miniProducto__precio">$15</span>
                                         </div>
                                     </div>
                                 </button>
                             </div>
                             <div class="miniProducto">
-                                <button type="button" class="btn p-0 indexMain__modalProducto" data-bs-toggle="modal"
-                                    data-bs-target="#productoComodidad8">
+                                <button type="button" class="btn p-0 indexMain__modalProducto miniProducto__button"
+                                    data-bs-toggle="modal" data-bs-target="#productoComodidad8">
                                     <div class="miniProducto__aSelector" href="">
                                         <div class="miniProducto__imcContainer">
                                             <img class="miniProducto__img" src="../images/comodidad/comodidad8.jpg"
                                                 alt="">
                                         </div>
                                         <div class="miniProducto__info">
-                                            <h5 class="miniProducto__nombre">Producto 1</h5>
-                                            <span class="miniProducto__precio">$29.99</span>
+                                            <h5 class="miniProducto__nombre">Almohada para cuello</h5>
+                                            <span class="miniProducto__precio">$20</span>
                                         </div>
                                     </div>
                                 </button>
                             </div>
                             <div class="miniProducto">
-                                <button type="button" class="btn p-0 indexMain__modalProducto" data-bs-toggle="modal"
-                                    data-bs-target="#productoComodidad11">
+                                <button type="button" class="btn p-0 indexMain__modalProducto miniProducto__button"
+                                    data-bs-toggle="modal" data-bs-target="#productoComodidad11">
                                     <div class="miniProducto__aSelector" href="">
                                         <div class="miniProducto__imcContainer">
                                             <img class="miniProducto__img" src="../images/comodidad/comodidad11.jpg"
                                                 alt="">
                                         </div>
                                         <div class="miniProducto__info">
-                                            <h5 class="miniProducto__nombre">Producto 1</h5>
-                                            <span class="miniProducto__precio">$29.99</span>
+                                            <h5 class="miniProducto__nombre">Pantuflas</h5>
+                                            <span class="miniProducto__precio">$5</span>
                                         </div>
                                     </div>
                                 </button>
@@ -461,8 +465,8 @@
                             <div class="producto ">
                                 <img src="../images/comodidad/comodidad1.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Almohada para cuello</h5>
+                                    <span>$20</span>
                                 </div>
                             </div>
                         </button>
@@ -475,7 +479,7 @@
                                         <img src="../images/comodidad/comodidad1.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Almohada para cuello</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -493,8 +497,8 @@
                             <div class="producto ">
                                 <img src="../images/comodidad/comodidad2.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Porta accesorios</h5>
+                                    <span>$70</span>
                                 </div>
                             </div>
                         </button>
@@ -507,7 +511,7 @@
                                         <img src="../images/comodidad/comodidad2.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Porta accesorios</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -524,8 +528,8 @@
                             <div class="producto ">
                                 <img src="../images/comodidad/comodidad3.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Almohada para cuello</h5>
+                                    <span>$20</span>
                                 </div>
                             </div>
                         </button>
@@ -538,7 +542,7 @@
                                         <img src="../images/comodidad/comodidad3.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Almohada para cuello</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -555,8 +559,8 @@
                             <div class="producto ">
                                 <img src="../images/comodidad/comodidad4.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Almohada para cuello</h5>
+                                    <span>$20</span>
                                 </div>
                             </div>
                         </button>
@@ -569,7 +573,7 @@
                                         <img src="../images/comodidad/comodidad4.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Almohada para cuello</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -586,8 +590,8 @@
                             <div class="producto ">
                                 <img src="../images/comodidad/comodidad5.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Almohada para cuello</h5>
+                                    <span>$20</span>
                                 </div>
                             </div>
                         </button>
@@ -600,7 +604,7 @@
                                         <img src="../images/comodidad/comodidad5.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Almohada para cuello</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -617,8 +621,8 @@
                             <div class="producto ">
                                 <img src="../images/comodidad/comodidad6.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Toalla de alta absoción</h5>
+                                    <span>$10</span>
                                 </div>
                             </div>
                         </button>
@@ -631,7 +635,7 @@
                                         <img src="../images/comodidad/comodidad6.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Toalla de alta absoción</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -648,8 +652,8 @@
                             <div class="producto ">
                                 <img src="../images/comodidad/comodidad7.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Porta accesorios</h5>
+                                    <span>$15</span>
                                 </div>
                             </div>
                         </button>
@@ -662,7 +666,7 @@
                                         <img src="../images/comodidad/comodidad7.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Porta accesorios</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -679,8 +683,8 @@
                             <div class="producto">
                                 <img src="../images/comodidad/comodidad8.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Almohada para cuello</h5>
+                                    <span>$22</span>
                                 </div>
                             </div>
                         </button>
@@ -693,7 +697,7 @@
                                         <img src="../images/comodidad/comodidad8.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Almohada para cuello</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -710,8 +714,8 @@
                             <div class="producto ">
                                 <img src="../images/comodidad/comodidad9.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Antifaz para dormir</h5>
+                                    <span>$3</span>
                                 </div>
                             </div>
                         </button>
@@ -724,7 +728,7 @@
                                         <img src="../images/comodidad/comodidad9.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Antifaz para dormir</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -741,8 +745,8 @@
                             <div class="producto ">
                                 <img src="../images/comodidad/comodidad10.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Antifaz para dormir</h5>
+                                    <span>$3</span>
                                 </div>
                             </div>
                         </button>
@@ -755,7 +759,7 @@
                                         <img src="../images/comodidad/comodidad10.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Antifaz para dormir</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -772,8 +776,8 @@
                             <div class="producto ">
                                 <img src="../images/comodidad/comodidad11.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Pantuflas</h5>
+                                    <span>$5</span>
                                 </div>
                             </div>
                         </button>
@@ -786,7 +790,7 @@
                                         <img src="../images/comodidad/comodidad11.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Pantuflas</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -803,8 +807,8 @@
                             <div class="producto ">
                                 <img src="../images/comodidad/comodidad12.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Toalla de alta absorción</h5>
+                                    <span>$10</span>
                                 </div>
                             </div>
                         </button>
@@ -817,7 +821,7 @@
                                         <img src="../images/comodidad/comodidad12.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Toalla de alta absorción</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -839,9 +843,6 @@
                     <div class="footer__menus col-lg-2 col-md-3 col-sm-6 col-12">
                         <a href="../index.html">
                             <h5>Inicio</h5>
-                        </a></h5>
-                        <a href="Categorias.html">
-                            <h5>Categorias</h5>
                         </a>
                         <a href="Novedades.html">
                             <h5>Novedades</h5>

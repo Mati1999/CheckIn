@@ -33,7 +33,7 @@
                     <div class="header__inicioSesion">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn p-0 header__botonModal" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                            data-bs-target="#inicioSesionModal">
                             <div class="header__botonSesion d-none d-lg-flex">
                                 <ion-icon name="person-outline"></ion-icon>
                                 <input type="button" value="Inicia Sesión">
@@ -41,9 +41,9 @@
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
+                        <div class="modal fade header__modal" id="inicioSesionModal" tabindex="-1"
+                            aria-labelledby="inicioSesionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog header__modal">
                                 <div class="modal-content p-3">
 
                                     <form>
@@ -286,7 +286,8 @@
                                     </h3>
                                     <div class="filtro__productos">
                                         <div class="miniProducto">
-                                            <button type="button" class="btn p-0 indexMain__modalProducto"
+                                            <button type="button"
+                                                class="btn p-0 indexMain__modalProducto miniProducto__button"
                                                 data-bs-toggle="modal" data-bs-target="#productoIndumentaria5">
                                                 <div class="miniProducto__aSelector" href="">
                                                     <div class="miniProducto__imcContainer">
@@ -294,14 +295,15 @@
                                                             src="../images/indumentaria/indumentaria5.jpg" alt="">
                                                     </div>
                                                     <div class="miniProducto__info">
-                                                        <h5 class="miniProducto__nombre">Producto 1</h5>
-                                                        <span class="miniProducto__precio">$29.99</span>
+                                                        <h5 class="miniProducto__nombre">Camisa</h5>
+                                                        <span class="miniProducto__precio">$20</span>
                                                     </div>
                                                 </div>
                                             </button>
                                         </div>
                                         <div class="miniProducto">
-                                            <button type="button" class="btn p-0 indexMain__modalProducto"
+                                            <button type="button"
+                                                class="btn p-0 indexMain__modalProducto miniProducto__button"
                                                 data-bs-toggle="modal" data-bs-target="#productoIndumentaria8">
                                                 <div class="miniProducto__aSelector" href="">
                                                     <div class="miniProducto__imcContainer">
@@ -309,14 +311,15 @@
                                                             src="../images/indumentaria/indumentaria8.jpg" alt="">
                                                     </div>
                                                     <div class="miniProducto__info">
-                                                        <h5 class="miniProducto__nombre">Producto 1</h5>
-                                                        <span class="miniProducto__precio">$29.99</span>
+                                                        <h5 class="miniProducto__nombre">Botas</h5>
+                                                        <span class="miniProducto__precio">$30</span>
                                                     </div>
                                                 </div>
                                             </button>
                                         </div>
                                         <div class="miniProducto">
-                                            <button type="button" class="btn p-0 indexMain__modalProducto"
+                                            <button type="button"
+                                                class="btn p-0 indexMain__modalProducto miniProducto__button"
                                                 data-bs-toggle="modal" data-bs-target="#productoIndumentaria11">
                                                 <div class="miniProducto__aSelector" href="">
                                                     <div class="miniProducto__imcContainer">
@@ -324,14 +327,15 @@
                                                             src="../images/indumentaria/indumentaria11.jpg" alt="">
                                                     </div>
                                                     <div class="miniProducto__info">
-                                                        <h5 class="miniProducto__nombre">Producto 1</h5>
-                                                        <span class="miniProducto__precio">$29.99</span>
+                                                        <h5 class="miniProducto__nombre">Buzo caterpillar</h5>
+                                                        <span class="miniProducto__precio">$40</span>
                                                     </div>
                                                 </div>
                                             </button>
                                         </div>
                                         <div class="miniProducto">
-                                            <button type="button" class="btn p-0 indexMain__modalProducto"
+                                            <button type="button"
+                                                class="btn p-0 indexMain__modalProducto miniProducto__button"
                                                 data-bs-toggle="modal" data-bs-target="#productoIndumentaria10">
                                                 <div class="miniProducto__aSelector" href="">
                                                     <div class="miniProducto__imcContainer">
@@ -339,8 +343,8 @@
                                                             src="../images/indumentaria/indumentaria10.jpg" alt="">
                                                     </div>
                                                     <div class="miniProducto__info">
-                                                        <h5 class="miniProducto__nombre">Producto 1</h5>
-                                                        <span class="miniProducto__precio">$29.99</span>
+                                                        <h5 class="miniProducto__nombre">Campera caterpillar</h5>
+                                                        <span class="miniProducto__precio">$40</span>
                                                     </div>
                                                 </div>
                                             </button>
@@ -389,61 +393,61 @@
                         </h3>
                         <div class="filtro__productos">
                             <div class="miniProducto">
-                                <button type="button" class="btn p-0 indexMain__modalProducto" data-bs-toggle="modal"
-                                    data-bs-target="#productoIndumentaria5">
+                                <button type="button" class="btn p-0 indexMain__modalProducto miniProducto__button"
+                                    data-bs-toggle="modal" data-bs-target="#productoIndumentaria5">
                                     <div class="miniProducto__aSelector" href="">
                                         <div class="miniProducto__imcContainer">
                                             <img class="miniProducto__img"
                                                 src="../images/indumentaria/indumentaria5.jpg" alt="">
                                         </div>
                                         <div class="miniProducto__info">
-                                            <h5 class="miniProducto__nombre">Producto 1</h5>
-                                            <span class="miniProducto__precio">$29.99</span>
+                                            <h5 class="miniProducto__nombre">Camisa</h5>
+                                            <span class="miniProducto__precio">$20</span>
                                         </div>
                                     </div>
                                 </button>
                             </div>
                             <div class="miniProducto">
-                                <button type="button" class="btn p-0 indexMain__modalProducto" data-bs-toggle="modal"
-                                    data-bs-target="#productoIndumentaria8">
+                                <button type="button" class="btn p-0 indexMain__modalProducto miniProducto__button"
+                                    data-bs-toggle="modal" data-bs-target="#productoIndumentaria8">
                                     <div class="miniProducto__aSelector" href="">
                                         <div class="miniProducto__imcContainer">
                                             <img class="miniProducto__img"
                                                 src="../images/indumentaria/indumentaria8.jpg" alt="">
                                         </div>
                                         <div class="miniProducto__info">
-                                            <h5 class="miniProducto__nombre">Producto 1</h5>
-                                            <span class="miniProducto__precio">$29.99</span>
+                                            <h5 class="miniProducto__nombre">Botas</h5>
+                                            <span class="miniProducto__precio">$30</span>
                                         </div>
                                     </div>
                                 </button>
                             </div>
                             <div class="miniProducto">
-                                <button type="button" class="btn p-0 indexMain__modalProducto" data-bs-toggle="modal"
-                                    data-bs-target="#productoIndumentaria11">
+                                <button type="button" class="btn p-0 indexMain__modalProducto miniProducto__button"
+                                    data-bs-toggle="modal" data-bs-target="#productoIndumentaria11">
                                     <div class="miniProducto__aSelector" href="">
                                         <div class="miniProducto__imcContainer">
                                             <img class="miniProducto__img"
                                                 src="../images/indumentaria/indumentaria11.jpg" alt="">
                                         </div>
                                         <div class="miniProducto__info">
-                                            <h5 class="miniProducto__nombre">Producto 1</h5>
-                                            <span class="miniProducto__precio">$29.99</span>
+                                            <h5 class="miniProducto__nombre">Buzo caterpillar</h5>
+                                            <span class="miniProducto__precio">$40</span>
                                         </div>
                                     </div>
                                 </button>
                             </div>
                             <div class="miniProducto">
-                                <button type="button" class="btn p-0 indexMain__modalProducto" data-bs-toggle="modal"
-                                    data-bs-target="#productoIndumentaria10">
+                                <button type="button" class="btn p-0 indexMain__modalProducto miniProducto__button"
+                                    data-bs-toggle="modal" data-bs-target="#productoIndumentaria10">
                                     <div class="miniProducto__aSelector" href="">
                                         <div class="miniProducto__imcContainer">
                                             <img class="miniProducto__img"
                                                 src="../images/indumentaria/indumentaria10.jpg" alt="">
                                         </div>
                                         <div class="miniProducto__info">
-                                            <h5 class="miniProducto__nombre">Producto 1</h5>
-                                            <span class="miniProducto__precio">$29.99</span>
+                                            <h5 class="miniProducto__nombre">Campera caterpillar</h5>
+                                            <span class="miniProducto__precio">$40</span>
                                         </div>
                                     </div>
                                 </button>
@@ -461,8 +465,8 @@
                             <div class="producto ">
                                 <img src="../images/indumentaria/indumentaria1.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Campera caterpillar</h5>
+                                    <span>$40</span>
                                 </div>
                             </div>
                         </button>
@@ -475,7 +479,7 @@
                                         <img src="../images/indumentaria/indumentaria1.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Campera caterpillar</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -493,8 +497,8 @@
                             <div class="producto ">
                                 <img src="../images/indumentaria/indumentaria2.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Campera caterpillar</h5>
+                                    <span>$40</span>
                                 </div>
                             </div>
                         </button>
@@ -507,7 +511,7 @@
                                         <img src="../images/indumentaria/indumentaria2.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Campera caterpillar</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -524,8 +528,8 @@
                             <div class="producto ">
                                 <img src="../images/indumentaria/indumentaria3.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Remera caterpillar</h5>
+                                    <span>$25</span>
                                 </div>
                             </div>
                         </button>
@@ -538,7 +542,7 @@
                                         <img src="../images/indumentaria/indumentaria3.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Remera caterpillar</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -555,8 +559,8 @@
                             <div class="producto ">
                                 <img src="../images/indumentaria/indumentaria4.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Campera caterpillar</h5>
+                                    <span>$40</span>
                                 </div>
                             </div>
                         </button>
@@ -569,7 +573,7 @@
                                         <img src="../images/indumentaria/indumentaria4.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Campera caterpillar</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -586,8 +590,8 @@
                             <div class="producto ">
                                 <img src="../images/indumentaria/indumentaria5.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Camisa</h5>
+                                    <span>$15</span>
                                 </div>
                             </div>
                         </button>
@@ -600,7 +604,7 @@
                                         <img src="../images/indumentaria/indumentaria5.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Camisa</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -617,8 +621,8 @@
                             <div class="producto ">
                                 <img src="../images/indumentaria/indumentaria6.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Camisa</h5>
+                                    <span>$15</span>
                                 </div>
                             </div>
                         </button>
@@ -631,7 +635,7 @@
                                         <img src="../images/indumentaria/indumentaria6.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Camisa</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -648,8 +652,8 @@
                             <div class="producto ">
                                 <img src="../images/indumentaria/indumentaria7.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Remera</h5>
+                                    <span>$10</span>
                                 </div>
                             </div>
                         </button>
@@ -662,7 +666,7 @@
                                         <img src="../images/indumentaria/indumentaria7.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Remera</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -679,8 +683,8 @@
                             <div class="producto">
                                 <img src="../images/indumentaria/indumentaria8.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Botas</h5>
+                                    <span>$20</span>
                                 </div>
                             </div>
                         </button>
@@ -693,7 +697,7 @@
                                         <img src="../images/indumentaria/indumentaria8.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Botas</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -710,8 +714,8 @@
                             <div class="producto ">
                                 <img src="../images/indumentaria/indumentaria9.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Conjunto</h5>
+                                    <span>$35</span>
                                 </div>
                             </div>
                         </button>
@@ -724,7 +728,7 @@
                                         <img src="../images/indumentaria/indumentaria9.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Conjunto</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -741,8 +745,8 @@
                             <div class="producto ">
                                 <img src="../images/indumentaria/indumentaria10.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Campera caterpillar</h5>
+                                    <span>$40</span>
                                 </div>
                             </div>
                         </button>
@@ -755,7 +759,7 @@
                                         <img src="../images/indumentaria/indumentaria10.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Campera caterpillar</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -772,8 +776,8 @@
                             <div class="producto ">
                                 <img src="../images/indumentaria/indumentaria11.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Buzo caterpillar</h5>
+                                    <span>$40</span>
                                 </div>
                             </div>
                         </button>
@@ -786,7 +790,7 @@
                                         <img src="../images/indumentaria/indumentaria11.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Buzo caterpillar</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -803,8 +807,8 @@
                             <div class="producto ">
                                 <img src="../images/indumentaria/indumentaria12.jpg" alt="producto1">
                                 <div class="producto__info">
-                                    <h5>Producto 1</h5>
-                                    <span>$###</span>
+                                    <h5>Campera caterpillar</h5>
+                                    <span>$40</span>
                                 </div>
                             </div>
                         </button>
@@ -817,7 +821,7 @@
                                         <img src="../images/indumentaria/indumentaria12.jpg"
                                             class="card-img-top tarjetaModal__img" alt="...">
                                         <div class="card-body tarjetaModal__info">
-                                            <h5 class="card-title tarjetaModal__nombre">Producto 1</h5>
+                                            <h5 class="card-title tarjetaModal__nombre">Campera caterpillar</h5>
                                             <p class="card-text tarjetaModal__description">Sombrero cómodo para
                                                 disfutar al aire libre, perfecto para el sol y con gran textura.
                                             </p>
@@ -839,9 +843,6 @@
                     <div class="footer__menus col-lg-2 col-md-3 col-sm-6 col-12">
                         <a href="../index.html">
                             <h5>Inicio</h5>
-                        </a></h5>
-                        <a href="Categorias.html">
-                            <h5>Categorias</h5>
                         </a>
                         <a href="Novedades.html">
                             <h5>Novedades</h5>

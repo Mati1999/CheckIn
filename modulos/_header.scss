@@ -406,8 +406,12 @@
         background: $colorTerciario;
         color: $colorPrimario;
         @include medidas (15rem, 15rem);
-        padding: 1rem;
+        padding: 1rem .5rem;
         transition: $transicion;
+    }
+
+    & li:first-child {
+        padding: 1rem .5rem;
     }
 
     & li:hover {

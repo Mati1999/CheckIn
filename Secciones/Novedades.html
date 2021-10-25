@@ -36,7 +36,7 @@
                     <div class="header__inicioSesion">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn p-0 header__botonModal" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                            data-bs-target="#inicioSesionModal">
                             <div class="header__botonSesion d-none d-lg-flex">
                                 <ion-icon name="person-outline"></ion-icon>
                                 <input type="button" value="Inicia Sesión">
@@ -44,9 +44,9 @@
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
+                        <div class="modal fade header__modal" id="inicioSesionModal" tabindex="-1"
+                            aria-labelledby="inicioSesionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog header__modal">
                                 <div class="modal-content p-3">
 
                                     <form>
@@ -171,7 +171,7 @@
                                                 </span>
                                             </a>
                                         </li>
-                                        <li><a href="#">
+                                        <li><a href="equipaje.html">
                                                 <div class="header__imgCategoria">
                                                     <img src="../images/equipaje.jpg" alt="">
                                                 </div>
@@ -180,7 +180,7 @@
                                                 </span>
                                             </a>
                                         </li>
-                                        <li><a href="#">
+                                        <li><a href="comodidad.html">
                                                 <div class="header__imgCategoria">
                                                     <img src="../images/comodidad.jpg" alt="">
                                                 </div>
@@ -189,7 +189,7 @@
                                                 </span>
                                             </a>
                                         </li>
-                                        <li><a href="#">
+                                        <li><a href="tecnologia.html">
                                                 <div class="header__imgCategoria">
                                                     <img src="../images/teconologia.jpg" alt="">
                                                 </div>
@@ -202,9 +202,9 @@
                                     <ul class="pt-0 pb-0 m-0 dropdown-menu d-lg-none"
                                         aria-labelledby=" navbarDropdown-1">
                                         <li><a href="Indumentaria.html">Indumentaria</a></li>
-                                        <li><a href="#">Equipaje</a></li>
-                                        <li><a href="#">Comodidad</a></li>
-                                        <li><a href="#">Tecnología</a></li>
+                                        <li><a href="equipaje.html">Equipaje</a></li>
+                                        <li><a href="comodidad.html">Comodidad</a></li>
+                                        <li><a href="tecnologia.html">Tecnología</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -228,14 +228,14 @@
         </header>
         <main class="novedadesMain">
             <section class="container-fluid">
-                <div class="row justify-content-around novedadesMain__contenedor gap-3">
+                <div class="row justify-content-around novedadesMain__contenedor gap-3 m-0">
                     <div class="novedad novedad--novedad1 col-lg-3 col-md-5 col-9">
                         <!-- colocar background -->
                         <div>
                             <h3>Tecnología</h3>
                             <h3>Nueva marca de relojes en nuestra tienda</h3>
                         </div>
-                        <a href="">
+                        <a href="tecnologia.html">
                             <h4>Ir a tecnología</h4>
                         </a>
                     </div>
@@ -245,7 +245,7 @@
                             <h3>Indumentaria</h3>
                             <h3>Nuevos pantalones para trekking</h3>
                         </div>
-                        <a href="">
+                        <a href="Indumentaria.html">
                             <h4>Ir a indumentaria</h4>
                         </a>
                     </div>
@@ -255,7 +255,7 @@
                             <h3>Temporada</h3>
                             <h3>Nuevos productos EDICIÓN INVIERNO</h3>
                         </div>
-                        <a href="">
+                        <a href="Indumentaria.html">
                             <h4>Ir a la Edicion Invierno</h4>
                         </a>
                     </div>
@@ -269,9 +269,6 @@
                     <div class="footer__menus col-lg-2 col-md-3 col-sm-6 col-12">
                         <a href="../index.html">
                             <h5>Inicio</h5>
-                        </a></h5>
-                        <a href="Categorias.html">
-                            <h5>Categorias</h5>
                         </a>
                         <a href="Novedades.html">
                             <h5>Novedades</h5>

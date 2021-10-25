@@ -687,7 +687,7 @@ html {
 }
 @media only screen and (max-width: 767px) {
   .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
-    font-size: 2.5rem;
+    font-size: 2rem;
     left: 6rem;
   }
 }
@@ -701,15 +701,9 @@ html {
   font-size: 1.3rem;
   top: 8rem;
 }
-@media only screen and (max-width: 767px) {
-  .carousel-item__h4 {
-    font-size: 1.5rem;
-    top: 10rem;
-  }
-}
 @media only screen and (max-width: 575px) {
   .carousel-item__h4 {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 }
 .carousel-item__a {
@@ -718,17 +712,6 @@ html {
   font-size: 3rem;
   font-weight: 700;
   transition: all 0.3s ease;
-}
-@media only screen and (max-width: 767px) {
-  .carousel-item__a {
-    font-size: 1rem;
-    top: 15rem;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .carousel-item__a {
-    font-size: 1.2rem;
-  }
 }
 .carousel-item:hover > .carousel-item__a {
   color: #DDDDDA;
@@ -748,7 +731,7 @@ html {
 }
 @media only screen and (max-width: 575px) {
   .indexMain__categorias {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 }
 
@@ -757,7 +740,6 @@ html {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
-  padding: 0 1rem;
 }
 @media only screen and (max-width: 575px) {
   .indexMain__categoriasTitulo {
@@ -927,12 +909,9 @@ html {
 .producto__info span {
   font-weight: 700;
   font-size: 1.3rem;
-  display: flex;
-  flex-direction: column;
 }
 .producto__info span .badge {
   font-size: 1.4rem;
-  margin-right: auto;
 }
 
 /*   SECTION DESTACADOS   */
@@ -942,7 +921,7 @@ html {
 }
 @media only screen and (max-width: 575px) {
   .indexMain__destacados {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 }
 
@@ -951,7 +930,6 @@ html {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
-  padding: 0 1rem;
 }
 @media only screen and (max-width: 575px) {
   .indexMain__destacadosTitulo {
@@ -994,7 +972,7 @@ html {
 }
 @media only screen and (max-width: 575px) {
   .indexMain__ofertas {
-    padding: 0 1rem;
+    padding: 0 2rem 2rem 2rem;
   }
 }
 
@@ -1003,7 +981,6 @@ html {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
-  padding: 0 1rem;
 }
 @media only screen and (max-width: 575px) {
   .indexMain__ofertasTitulo {
@@ -1041,7 +1018,7 @@ html {
   border-bottom: 1px solid #4a707a;
 }
 
-.producto__info--oferta :nth-child(2) .precio {
+.producto__info--oferta :nth-child(2) {
   text-decoration: line-through;
 }
 
@@ -1570,4 +1547,4 @@ html {
   color: #4a707a;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */

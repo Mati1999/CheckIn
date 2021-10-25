@@ -676,7 +676,7 @@ html {
   position: absolute;
   color: #DDDDDA;
   font-size: 3rem;
-  top: 3rem;
+  top: 1rem;
   left: 10rem;
 }
 @media only screen and (max-width: 991px) {
@@ -693,18 +693,18 @@ html {
 }
 @media only screen and (max-width: 575px) {
   .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
-    font-size: 1.8rem;
-    left: 2.5rem;
+    font-size: 2rem;
+    left: 3rem;
   }
 }
 .carousel-item__h4 {
   font-size: 1.3rem;
-  top: 8rem;
+  top: 6rem;
 }
 @media only screen and (max-width: 767px) {
   .carousel-item__h4 {
     font-size: 1.5rem;
-    top: 10rem;
+    top: 8rem;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -713,21 +713,27 @@ html {
   }
 }
 .carousel-item__a {
-  top: 11rem;
+  top: 8rem;
   text-decoration: 1px solid transparent;
   font-size: 3rem;
   font-weight: 700;
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 991px) {
+  .carousel-item__a {
+    top: 10rem;
+  }
+}
 @media only screen and (max-width: 767px) {
   .carousel-item__a {
     font-size: 1rem;
-    top: 15rem;
+    top: 12rem;
   }
 }
 @media only screen and (max-width: 575px) {
   .carousel-item__a {
     font-size: 1.2rem;
+    top: 12.5rem;
   }
 }
 .carousel-item:hover > .carousel-item__a {
@@ -1305,9 +1311,16 @@ html {
   background: #4a707a;
   color: #DDDDDA;
 }
+.novedad .novedad__titulo {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.novedad .novedad__info {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
 .novedad h3 {
   margin: 1rem 0;
-  font-size: 1.3rem;
   color: #DDDDDA;
 }
 @media only screen and (max-width: 575px) {

@@ -63,9 +63,18 @@
         color: $colorTerciario;
     }
 
+    .novedad__titulo {
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+
+    .novedad__info {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
     & h3 {
         margin: 1rem 0;
-        font-size: 1.3rem;
         color: $colorTerciario;
 
         @include miniMobile {

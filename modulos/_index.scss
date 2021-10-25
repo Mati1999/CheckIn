@@ -37,7 +37,7 @@
         position: absolute;
         color: $colorTerciario;
         font-size: 3rem;
-        top: 3rem;
+        top: 1rem;
         left: 10rem;
 
         @include tablet {
@@ -51,18 +51,18 @@
         }
 
         @include miniMobile {
-            font-size: 1.8rem;
-            left: 2.5rem;
+            font-size: 2rem;
+            left: 3rem;
         }
     }
 
     &__h4 {
         font-size: 1.3rem;
-        top: 8rem;
+        top: 6rem;
 
         @include mobile {
             font-size: 1.5rem;
-            top: 10rem;
+            top: 8rem;
         }
 
         @include miniMobile {
@@ -71,19 +71,24 @@
     }
 
     &__a {
-        top: 11rem;
+        top: 8rem;
         text-decoration: 1px solid transparent;
         font-size: 3rem;
         font-weight: 700;
         transition: $transicion;
 
+        @include tablet {
+            top: 10rem;
+        }
+
         @include mobile {
             font-size: 1rem;
-            top: 15rem;
+            top: 12rem;
         }
 
         @include miniMobile {
             font-size: 1.2rem;
+            top: 12.5rem;
         }
     }
 

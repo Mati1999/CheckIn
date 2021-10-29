@@ -292,7 +292,7 @@
             transition: $transicion;
         }
 
-        input:checked+label:before {
+        input[type="radio"]:checked+label:before {
             @include medidas(25px, 25px);
             border: 3px solid $colorPrimario;
             background-color: $colorTerciario;

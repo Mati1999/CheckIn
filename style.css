@@ -1241,7 +1241,7 @@ html {
 }
 .miniProducto__img {
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 0.3rem;
 }
 .miniProducto__info {

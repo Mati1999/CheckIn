@@ -37,13 +37,18 @@
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    padding-right: 0;
 
     @include tablet {
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     img {
         width: 8rem;
+
+        @include miniMobile {
+            margin-left: 1rem;
+        }
     }
 }
 
@@ -67,7 +72,7 @@
 .header__buscadorMobile {
     @extend .header__buscador;
     @include medidas(80%, 2rem);
-
+    margin: 0 auto;
 }
 
 .header__botonModal {
@@ -247,6 +252,7 @@
     display: flex;
     align-items: center;
 
+
     @include tablet {
         position: relative;
         top: 0;
@@ -262,9 +268,12 @@
     @include medidas(3rem, 100%);
 
     @include tablet {
-
+        margin-left: 1rem;
         background: transparent;
+    }
 
+    @include mobile {
+        margin-left: 1.5rem;
     }
 
     &:focus {

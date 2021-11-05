@@ -49,14 +49,20 @@ html {
   justify-content: space-around;
   align-items: center;
   height: 100%;
+  padding-right: 0;
 }
 @media only screen and (max-width: 991px) {
   .header__menu {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
 .header__menu img {
   width: 8rem;
+}
+@media only screen and (max-width: 575px) {
+  .header__menu img {
+    margin-left: 1rem;
+  }
 }
 
 .header__buscador, .header__buscadorMobile {
@@ -79,6 +85,7 @@ html {
 .header__buscadorMobile {
   width: 80%;
   height: 2rem;
+  margin: 0 auto;
 }
 
 .header__botonModal {
@@ -262,7 +269,13 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .header__toggler {
+    margin-left: 1rem;
     background: transparent;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header__toggler {
+    margin-left: 1.5rem;
   }
 }
 .header__toggler:focus {

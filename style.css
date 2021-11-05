@@ -142,7 +142,7 @@ html {
   height: 50%;
   position: relative;
   max-width: 100%;
-  margin: 15rem auto;
+  margin: 12rem auto;
   pointer-events: none;
 }
 @media only screen and (max-width: 991px) {
@@ -150,6 +150,7 @@ html {
     width: 50%;
     height: 30%;
     max-width: 50%;
+    margin: 15rem auto;
   }
 }
 @media only screen and (max-width: 767px) {
